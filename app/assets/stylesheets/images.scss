@@ -1,0 +1,16 @@
+.full-banner {
+  background-image: image-url("enter-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-logo {
+  opacity: 1;
+  height: 60px;
+  margin-top: 40px;
+}

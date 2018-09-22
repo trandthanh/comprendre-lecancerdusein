@@ -1,0 +1,23 @@
+.white-rectangle {
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  opacity: 0.9;
+}
+
+.upper-rectangle {
+  display: flex;
+  justify-content: center;
+}
+
+.mid-rectangle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-rectangle {
+  display: flex;
+  justify-content: center;
+}

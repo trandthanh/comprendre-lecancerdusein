@@ -1,1 +1,16 @@
-<h1>This is the enter page</h1>
+<div class="full-banner page">
+  <div class="white-rectangle">
+    <div class="upper-rectangle">
+      <%= image_tag ("logo.png"), class: "big-logo" %>
+    </div>
+    <div class="mid-rectangle">
+      <h1 class="banner-title">Bienvenue</h1>
+      <p class="banner-text">Ce site a été créé par une patiente atteinte d'un cancer du sein. Il ne présente en aucun cas des avis d'experts de la santé et ne prétend pas remplacer l'avis de votre médecin. Son seul but est de partager les questionnements et les réponses trouvées par cette jeune patiente en espérant qu'ils puissent également vous aider.</p>
+    </div>
+    <div class="lower-rectangle">
+      <%= link_to home_path do %>
+        <h2 class="banner-signature">J'ai compris donc je clique pour accéder au site</h2>
+      <% end %>
+    </div>
+  </div>
+</div>
