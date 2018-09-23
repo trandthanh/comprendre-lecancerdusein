@@ -1,0 +1,46 @@
+$fluo-pink: #E13FB3;
+$nadeshiko-pink: #F5B0CB;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.navbar-middle-item {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $fluo-pink;
+    }
+  }
+}
+
+i {
+  color: $fluo-pink;
+  font-size: 25px;
+}
+
+.navbar-left {
+  width: 30%;
+}

@@ -1,1 +1,26 @@
-<h1>Hi i'm the navbar</h1>
+<div class="navbar">
+  <div class="navbar-left">
+    <%= image_tag ("logo.png"), class: "navbar-logo" %>
+  </div>
+  <div class="navbar-middle">
+    <div class="navbar-middle-item">
+      <%= link_to root_path do %>
+        <p>Maladie</p>
+      <% end %>
+    </div>
+    <div class="navbar-middle-item">
+      <%= link_to root_path do %>
+        <p>Quotidien</p>
+      <% end %>
+    </div>
+    <div class="navbar-middle-item">
+      <%= link_to root_path do %>
+        <p>Entendus</p>
+      <% end %>
+    </div>
+  </div>
+  <div class="navbar-right">
+    <i class="fas fa-envelope"></i>
+  </div>
+</div>
+
