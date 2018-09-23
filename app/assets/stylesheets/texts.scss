@@ -1,5 +1,6 @@
-$fluo-pink: #E13FB3;
+$fluo-pink: #E53CBC;
 $nadeshiko-pink: #F5B0CB;
+$melon: #FAB3A9;
 
 .banner-title {
   font-size: 70px;
@@ -24,4 +25,22 @@ $nadeshiko-pink: #F5B0CB;
 
 a {
   text-decoration: none;
+}
+
+.page-upper-left-text {
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.p-small {
+  font-size: 16px;
+}
+
+.page-upper-left-text-item {
+  margin-bottom: 70px;
+}
+
+.h-big {
+  font-size: 40px;
+  color: $fluo-pink;
 }

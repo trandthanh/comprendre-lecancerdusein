@@ -1,3 +1,5 @@
+$light-pink: #FFE4EF;
+
 .full-banner {
   background-image: image-url("enter-background.png");
   background-size: cover;
@@ -20,4 +22,17 @@
   height: 60px;
   margin-top: 5px;
   margin-left: 20px;
+}
+
+.half-page-illustration {
+  background-image: image-url("home-illustration4.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.dot-one {
+  background-image: image-url("dot1.png");
+  background-size: cover;
+  background-position: center;
 }

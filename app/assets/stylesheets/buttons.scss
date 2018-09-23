@@ -1,0 +1,22 @@
+$nadeshiko-pink: #F5B0CB;
+$melon: #FAB3A9;
+
+.btn {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: $nadeshiko-pink;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  opacity: 1;
+  background: $melon;
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

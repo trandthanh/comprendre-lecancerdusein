@@ -1,10 +1,12 @@
-$fluo-pink: #E13FB3;
+$fluo-pink: #E53CBC;
 $nadeshiko-pink: #F5B0CB;
+$light-pink: #FFE4EF;
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .navbar-middle {
@@ -43,4 +45,9 @@ i {
 
 .navbar-left {
   width: 30%;
+}
+
+.half-pink {
+  background-color: $light-pink;
+  width: 50%;
 }
