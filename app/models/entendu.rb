@@ -1,0 +1,2 @@
+class Entendu < ApplicationRecord
+end

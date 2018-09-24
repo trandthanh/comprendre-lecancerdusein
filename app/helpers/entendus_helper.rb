@@ -1,0 +1,2 @@
+module EntendusHelper
+end

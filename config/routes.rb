@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   resources :questions, only: [:index, :show]
 
   get 'quotidiens/:url', to: 'quotidiens#show', as: :quotidien
-  resources :quotidien, only: [:index, :show]
+  resources :quotidiens, only: [:index, :show]
+
+  resources :entendus, only: [:index, :show]
 end

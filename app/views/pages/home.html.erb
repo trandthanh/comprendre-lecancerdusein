@@ -57,3 +57,19 @@
     <% end %>
   </div>
 </div>
+
+<div class="page-entendu">
+  <div class="page-questions-title text-center">
+    <div class="page-questions-title-item-1">
+      <h1>Certaines de ces phrases sont venus de ceux qui m'ont le plus soutenu. Et malgré toute leur bonne volonté, personne n'est parfait.</h1>
+    </div>
+    <div class="page-questions-cards">
+      <% @entendus.each do |e| %>
+        <%= e.title %>
+      <% end %>
+    </div>
+    <%= link_to entendus_path do %>
+      <p>Voir plus</p>
+    <% end %>
+  </div>
+</div>
