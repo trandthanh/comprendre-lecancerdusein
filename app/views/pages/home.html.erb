@@ -11,15 +11,31 @@
         </p>
       </div>
     </div>
-    <div class="button">
-      <%= link_to(root_path, class: "btn") do %>
+    <div class="butt-test">
+      <%= link_to(root_path, class: "butt-pink") do %>
           <p>Comprendre mon projet</p>
       <% end %>
     </div>
-
-
   </div>
   <div class="page-upper-right">
     <div class="half-page-illustration"></div>
+  </div>
+</div>
+
+<div class="page-questions dot-two">
+  <div class="page-questions-title text-center">
+    <div class="page-questions-title-item-1">
+      <p>Les Questions</p>
+    </div>
+    <div class="page-questions-title-item-2">
+      <h1>Carcinome canalaire infiltrait, grade, stade, ACR, cancer hormonale, triple négatif ... <br> Dîtes-moi ce que j'ai, en Français s'il vous plait.</h1>
+    </div>
+  </div>
+  <div class="page-questions-cards">
+    <% @questions.each do |q| %>
+      <%= link_to question_path(q.url) do %>
+        <%= q.title %>
+      <% end %>
+    <% end %>
   </div>
 </div>

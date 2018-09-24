@@ -32,8 +32,14 @@ $light-pink: #FFE4EF;
   height: 100vh;
 }
 
-.dot-one {
-  background-image: image-url("dot3.png");
-  background-size: cover;
-  background-position: center;
+// .dot-one {
+//   background-image: image-url("dot3.png");
+//   background-size: cover;
+//   background-position: center;
+// }
+
+.dot-two {
+  background-image: image-url("dot5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }

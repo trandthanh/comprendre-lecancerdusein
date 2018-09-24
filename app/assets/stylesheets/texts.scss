@@ -30,6 +30,7 @@ a {
 .page-upper-left-text {
   padding-left: 50px;
   padding-right: 60px;
+  padding-top: 30px;
 }
 
 .p-small {
@@ -43,4 +44,20 @@ a {
 .h-big {
   font-size: 40px;
   color: $fluo-pink;
+}
+
+.page-questions-title-item-1 {
+  margin-top: 80px;
+  p {
+    color: $fluo-pink;
+  }
+}
+
+.page-questions-title-item-2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  h1 {
+    width: 60%;
+  }
 }

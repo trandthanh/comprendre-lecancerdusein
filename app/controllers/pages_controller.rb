@@ -4,5 +4,6 @@ class PagesController < ApplicationController
   end
 
   def home
+    @questions = Question.all
   end
 end

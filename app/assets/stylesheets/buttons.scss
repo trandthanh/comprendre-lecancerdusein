@@ -1,23 +1,22 @@
 $nadeshiko-pink: #F5B0CB;
 $melon: #FAB3A9;
 
-.btn {
+.butt-pink {
   color: white;
-  padding: 5px 15px;
+  padding: 20px 20px;
   border-radius: 50px;
   font-weight: bold;
   background: $nadeshiko-pink;
   transition: background 0.3s ease;
 }
-.btn:hover {
+.butt-pink:hover {
   opacity: 1;
   background: $melon;
   text-decoration: none;
   color: white;
 }
 
-.button {
+.butt-test {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
