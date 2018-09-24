@@ -1,6 +1,8 @@
 <div class="navbar">
   <div class="navbar-left">
-    <%= image_tag ("logo.png"), class: "navbar-logo" %>
+    <%= link_to home_path do %>
+      <%= image_tag ("logo.png"), class: "navbar-logo" %>
+    <% end %>
   </div>
   <div class="navbar-middle">
     <div class="navbar-middle-item">

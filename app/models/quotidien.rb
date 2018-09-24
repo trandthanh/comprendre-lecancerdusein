@@ -1,0 +1,2 @@
+class Quotidien < ApplicationRecord
+end

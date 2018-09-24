@@ -1,0 +1,2 @@
+module QuotidiensHelper
+end

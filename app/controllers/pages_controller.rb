@@ -5,5 +5,7 @@ class PagesController < ApplicationController
 
   def home
     @questions = Question.all
+
+    @quotidiens = Quotidien.all
   end
 end
