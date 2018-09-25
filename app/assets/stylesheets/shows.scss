@@ -1,0 +1,30 @@
+$shampoo: #FFCCFC;
+$fluo-pink: #E53CBC;
+
+.question-article {
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.question-article-text {
+  background-color: white;
+}
+
+.question-article-title {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.question-article-banner {
+  width: 50%;
+}

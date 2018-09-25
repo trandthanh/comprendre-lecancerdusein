@@ -1,1 +1,9 @@
-<h1>Hello</h1>
+<div class="question-article">
+    <div class="question-article-title text-center">
+      <h1><%= @question.title %></h1>
+    </div>
+  <%= image_tag ("#{@question.url}.png"), class: "question-article-banner" %>
+  <div class="question-article-text">
+
+  </div>
+</div>
