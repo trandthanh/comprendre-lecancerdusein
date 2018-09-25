@@ -6,6 +6,7 @@ $light-pink: #FFE4EF;
 $melon: #FAB3A9;
 $tango-pink: #EF7674;
 $pale-pink: #FFDDDD;
+$fluo-pink: #E53CBC;
 
 .page-upper-left {
   width: 50%;
@@ -49,4 +50,42 @@ $pale-pink: #FFDDDD;
 
 .page-quotidien-right {
   width: 50%;
+}
+
+.page-entendu {
+  height: 50vh;
+  // background-image: image-url("cloud4.png");
+  // background-size: cover;
+  // background-position: center;
+  display: flex;
+  background-color: $light-pink;
+}
+
+.page-entendu-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: black;
+    width: 80%;
+  }
+}
+
+.page-entendu-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-entendu-items {
+  display: flex;
+  flex-direction: row;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
 }

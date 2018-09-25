@@ -12,3 +12,28 @@ $melon: #FAB3A9;
 .page-question-card-link {
   margin-top: 20px;
 }
+
+.page-entendus-link {
+  margin-top: 30px;
+  background-image: image-url("gold-brush-stroke.png");
+  background-size: contain;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
