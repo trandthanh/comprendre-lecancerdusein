@@ -17,6 +17,11 @@ $light-pink: #FFE4EF;
   margin-top: 40px;
 }
 
+.small-logo {
+  opacity: 1;
+  height: 30px;
+}
+
 .navbar-logo {
   opacity: 1;
   height: 60px;
@@ -50,6 +55,9 @@ $light-pink: #FFE4EF;
   width: 350px;
 }
 
-.round {
-
+.page-sources-logos {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

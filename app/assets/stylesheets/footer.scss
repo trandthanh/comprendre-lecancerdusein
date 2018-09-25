@@ -1,0 +1,79 @@
+$tuscany: #F59CA9;
+$light-pink: #FFE4EF;
+$melon: #FAB3A9;
+$tango-pink: #EF7674;
+$pale-pink: #FFDDDD;
+$fluo-pink: #E53CBC;
+
+.footer {
+  height: 40vh;
+  background-color: $tuscany;
+  p {
+    font-size: 12px;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  .small-logo {
+    margin-left: 50px;
+  }
+  p {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-center: center;
+}
+
+.footer-right-item {
+  margin-left: 20px;
+  p {
+    font-size: 15px;
+    color: white;
+    &:hover {
+      color: $fluo-pink;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $melon;
+    }
+  }
+}
+
+.footer-right-item-contact {
+  margin-left: 50px;
+  p {
+    font-size: 15px;
+    color: $fluo-pink;
+  }
+}
+
+.footer-right-items {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.below-footer {
+  height: 50px;
+  background-color: $melon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    color: $fluo-pink;
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
