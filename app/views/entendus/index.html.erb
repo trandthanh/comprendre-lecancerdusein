@@ -1,1 +1,24 @@
-<p>Index des Entendus</p>
+<div class="index-banner">
+  <div class="index-right col-md-8 text-center">
+    <div class="index-title">
+      <h1>Ils nous soutiennent au quotidien et parfois, même nos héros de tous les jours, arrivent à nous piquer non intentionnellement.</h1>
+    </div>
+    <div class="index-description">
+      <p>Des petites pensées positives pour se souvenir que ce n'est pas facile pour eux tous les jours non plus.</p>
+    </div>
+  </div>
+</div>
+
+<% @entendus.each do |e| %>
+  <div class="index-entendu-story-right">
+    <%= image_tag ("light-pink-brush-stroke.png"), class: "sticker" %>
+    <div class="index-entendu-story-half col-md-6">
+      <div class="entendu-title">
+        <h3><%= e.title %></h3>
+      </div>
+    </div>
+    <div class="index-entendu-story-half col-md-6">
+      <%= image_tag ("#{e.id}.png"), class: "entendu-square" %>
+    </div>
+  </div>
+<% end %>
