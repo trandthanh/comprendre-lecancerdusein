@@ -27,3 +27,20 @@
     height: 80px;
   }
 }
+
+.page-quotidiens-cards {
+  margin-top: 50px;
+}
+
+.page-quotidiens-cards-item {
+  margin-top: 10px;
+  background-image: image-url("pink-paint-brush.png");
+  background-size: contain;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

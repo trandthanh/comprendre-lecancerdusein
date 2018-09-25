@@ -46,7 +46,7 @@
                 <% end %>
                 <p><%= q.description %></p>
                 <div class="page-question-card-link">
-                  <%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %>
+                  <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong>
                 </div>
               </div>
             </div>
@@ -58,22 +58,26 @@
 </div>
 
 <div class="page-quotidien">
-  <div class="page-questions-title text-center">
-    <div class="page-questions-title-item-1">
-      <p>Les Questions sur le Quotidien</p>
-    </div>
-    <div class="page-questions-title-item-2">
-      <h1>Nourriture, sports ... Comment ma vie au quotidien est-elle affectée ?</h1>
-    </div>
-  </div>
-  <div class="page-questions-cards">
-    <% @quotidiens.each do |q| %>
-      <div class="page-quotidiens-cards-item">
-        <%= link_to quotidien_path(q.url) do %>
-          <%= q.title %>
-        <% end %>
+  <div class="page-quotidien-right text-center">
+    <div class="page-questions-title text-center">
+      <div class="page-questions-title-item-1">
+        <p><strong>Les Listes pour Aider Au Quotidien</strong></p>
       </div>
-    <% end %>
+      <div class="page-quotidiens-title-item-2">
+        <h1>Nourriture, sports ... Comment ma vie au quotidien est-elle affectée ?</h1>
+      </div>
+    </div>
+    <div class="page-quotidiens-cards">
+      <% @quotidiens.each do |q| %>
+        <div class="page-quotidiens-cards-item">
+          <div class="page-quotidiens-cards-text">
+            <%= link_to quotidien_path(q.url) do %>
+              <p class="quotidien-title"><%= q.title %></p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 

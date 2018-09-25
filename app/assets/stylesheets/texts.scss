@@ -61,3 +61,32 @@ a {
     width: 60%;
   }
 }
+
+.page-quotidiens-title-item-2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  h1 {
+    width: 80%;
+  }
+}
+
+.quotidien-title {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.page-quotidiens-cards-text {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  p {
+    &:hover {
+      color: $melon;
+    }
+  }
+}

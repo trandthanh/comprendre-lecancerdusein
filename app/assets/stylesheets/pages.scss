@@ -36,6 +36,17 @@ $pale-pink: #FFDDDD;
 }
 
 .page-quotidien {
-  background-color: $pale-pink;
-  padding-top: 50px;
+  background-image: image-url("liste-background.png");
+  background-size: cover;
+  background-position: center center;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-quotidien-right {
+  width: 50%;
 }
