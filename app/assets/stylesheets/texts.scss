@@ -20,6 +20,13 @@ $melon: #FAB3A9;
   color: $fluo-pink;
   &:hover {
     color: $nadeshiko-pink;
+    text-decoration: none;
+  }
+  h2 {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

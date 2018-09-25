@@ -32,8 +32,11 @@ $fluo-pink: #E53CBC;
 
 .page-questions {
   margin-top: 50px;
-  height: 100vh;
-  margin-bottom: 150px;
+  height: 140vh;
+  margin-bottom: 80px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .page-quotidien {

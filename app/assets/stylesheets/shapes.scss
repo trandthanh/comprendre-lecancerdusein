@@ -20,4 +20,10 @@
 .lower-rectangle {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
