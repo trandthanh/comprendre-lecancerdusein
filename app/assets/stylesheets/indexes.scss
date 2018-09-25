@@ -1,0 +1,30 @@
+.index-banner {
+  background-image: image-url("liste-background.png");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.index-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.index-description {
+  margin-top: 50px;
+  width: 60%;
+}
+
+.index-list {
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.index-card-item {
+  margin-bottom: 50px;
+}

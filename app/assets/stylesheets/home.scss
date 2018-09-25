@@ -1,0 +1,14 @@
+$tea-rose: #F9C7C0;
+
+.supplement-info {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $tea-rose;
+}
+
+.butt-supp {
+  margin-top: 30px;
+}
