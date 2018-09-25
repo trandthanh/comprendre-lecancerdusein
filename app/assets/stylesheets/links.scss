@@ -1,0 +1,14 @@
+$fluo-pink: #E53CBC;
+$melon: #FAB3A9;
+
+.pink-link {
+  margin-top: 30px;
+  color: $fluo-pink;
+  &:hover {
+    color: $melon;
+  }
+}
+
+.page-question-card-link {
+  margin-top: 20px;
+}

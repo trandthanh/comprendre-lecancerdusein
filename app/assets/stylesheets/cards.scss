@@ -1,0 +1,29 @@
+.page-questions-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-questions-row {
+  margin-top: 80px;
+}
+
+.page-questions-card-description {
+  h3 {
+    margin-top: 30px;
+    width: 340px;
+    color: black;
+    height: 35px;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  p {
+    margin-top: 30px;
+    width: 350px;
+    height: 80px;
+  }
+}

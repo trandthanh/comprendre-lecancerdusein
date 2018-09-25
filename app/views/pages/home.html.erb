@@ -24,7 +24,7 @@
   </div>
 </div>
 
-<div class="page-questions dot-two">
+<div class="page-questions dot-two text-center">
   <div class="page-questions-title text-center">
     <div class="page-questions-title-item-1">
       <p><strong>Les Questions sur la Maladie</strong></p>
@@ -33,12 +33,27 @@
       <h1>Cancer, biopsie, carcinome canalaire infiltrait, grade, stade, hormonale, triple négatif ... <br> Expliquez-moi ma maladie, en Français s'il vous plait.</h1>
     </div>
   </div>
-  <div class="page-questions-cards">
-    <% @questions.sample(3).each do |q| %>
-      <%= link_to question_path(q.url) do %>
-        <%= q.title %>
+  <div class="page-questions-cards text-center">
+    <div class="page-questions-row text-center">
+      <% @questions.sample(3).each do |q| %>
+        <div class="page-questions-card-item">
+          <div class="col-md-4 text-center">
+            <div class="page-questions-card-body text-center">
+              <%= image_tag "#{q.url}.png", class: "question-card-image" %>
+              <div class="page-questions-card-description">
+                <%= link_to question_path(q.url) do %>
+                  <h3><%= q.title %></h3>
+                <% end %>
+                <p><%= q.description %></p>
+                <div class="page-question-card-link">
+                  <%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>
 
@@ -53,9 +68,11 @@
   </div>
   <div class="page-questions-cards">
     <% @quotidiens.each do |q| %>
-      <%= link_to quotidien_path(q.url) do %>
-        <%= q.title %>
-      <% end %>
+      <div class="page-quotidiens-cards-item">
+        <%= link_to quotidien_path(q.url) do %>
+          <%= q.title %>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>

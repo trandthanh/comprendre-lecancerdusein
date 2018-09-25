@@ -1,4 +1,3 @@
-
 $light-pink: #FFE4EF;
 
 .full-banner {
@@ -42,4 +41,11 @@ $light-pink: #FFE4EF;
   background-image: image-url("dot5.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.question-card-image {
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 350px;
 }
