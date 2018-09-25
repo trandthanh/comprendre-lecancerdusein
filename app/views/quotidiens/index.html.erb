@@ -12,7 +12,13 @@
 <div class="quotidien-index-list">
   <% @quotidiens.each do |q| %>
     <div class="quotidien-list-item">
-      <h3><%= q.title %></h3>
+      <%= link_to quotidien_path(q.url) do %>
+        <h3><%= q.title %></h3>
+      <% end %>
+      <p class="no-line"><%= q.description %></p>
+      <%= link_to quotidien_path(q.url) do %>
+        <strong><p class="quotidien-link">Voir la liste</p></strong>
+      <% end %>
     </div>
   <% end %>
 </div>

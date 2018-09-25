@@ -1,3 +1,7 @@
+$fluo-pink: #E53CBC;
+$melon: #FAB3A9;
+$white-smoke: #F4F4F9;
+
 .index-banner {
   background-image: image-url("liste-background.png");
   background-size: cover;
@@ -31,11 +35,41 @@
 
 .quotidien-list-item {
   margin-bottom: 30px;
+  h3 {
+    margin-bottom: 30px;
+    color: $fluo-pink;
+  }
+
+  p {
+    width: 70%;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+
+  }
+  .no-line {
+    border-bottom: 0px solid white;
+  }
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 .quotidien-index-list {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 80px;
+  background-color: $white-smoke;
+}
+
+.quotidien-link {
+  color: $melon;
+  &:hover {
+    color: black;
+  }
 }
