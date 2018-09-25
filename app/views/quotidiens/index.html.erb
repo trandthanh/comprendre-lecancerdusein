@@ -1,0 +1,27 @@
+<div class="index-banner">
+  <div class="index-right col-md-8 text-center">
+    <div class="index-title">
+      <h1>Ce que la maladie change dans notre quotidien ...</h1>
+    </div>
+    <div class="index-description">
+      <p>Des listes collectées pour répondre à nos inquiétudes et nos doutes du quotidien.</p>
+    </div>
+  </div>
+</div>
+
+<div class="quotidien-index-list">
+  <% @quotidiens.each do |q| %>
+    <div class="quotidien-list-item">
+      <h3><%= q.title %></h3>
+    </div>
+  <% end %>
+</div>
+
+<div class="supplement-info">
+  <h2>Vous ne trouvez pas l'information que vous recherchez ?</h2>
+  <div class="butt-test butt-supp">
+    <%= link_to(root_path, class: "butt-pink") do %>
+        <p>Laissez-moi un message</p>
+    <% end %>
+  </div>
+</div>
