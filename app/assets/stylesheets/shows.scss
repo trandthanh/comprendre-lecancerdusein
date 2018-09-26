@@ -25,6 +25,9 @@ $fluo-pink: #E53CBC;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  h1 {
+    color: $fluo-pink;
+  }
   p {
     width: 60%;
   }
@@ -46,4 +49,11 @@ hr {
 .question-section {
   display: flex;
   margin-top: 30px;
+  p {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  h3 {
+    color: $fluo-pink;
+  }
 }
