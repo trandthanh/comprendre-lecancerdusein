@@ -70,6 +70,9 @@ $beige: #FADEDE;
   align-items: center;
   justify-content: center;
   color: $tango-pink;
+  background-image: image-url("pinkpaint.png");
+  background-size: cover;
+  background-position: center;
   &:hover {
     opacity: 0.8;
     color: white;
