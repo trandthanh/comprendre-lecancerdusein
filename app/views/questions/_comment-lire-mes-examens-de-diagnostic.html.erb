@@ -1,9 +1,131 @@
 <div class="question-article">
-    <div class="question-article-title text-center">
-      <h1><%= @question.title %></h1>
-    </div>
+  <div class="question-article-title text-center">
+    <h1><%= @question.title %></h1>
+    <hr>
+    <p><%= @question.description %></p>
+  </div>
   <%= image_tag ("#{@question.url}.png"), class: "question-article-banner" %>
   <div class="question-article-text">
-
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>A garder en tête :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Les examens et la biopsie sont destinés à être lus par les professionnels de la santé. Il est donc normal qu’on n’y comprenne rien à la première lecture. Mais il ne faut pas qu’on hésite à demander à notre médecin qu’il nous explique, soyons curieuses et actives par rapport à notre maladie.</p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Le bilan initial et le bilan d’extension :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Avant de nous envoyer en thérapie, les médecins doivent nous faire passer une batterie de tests pour mieux comprendre ce qui est en train de grossir en nous et la manière façon de l’affronter. Nous devrons avoir plusieurs tests à faire avant qu’on puisse nous envoyer en thérapie (sauf cas isolés) : la mammographie, l’échographie, la biopsie, l’IRM, le PET scan (+ le scanner cérébral). Suite au PET scan, on vous demandera peut-être de faire d’autres examens si apparition d’éléments suspects sur le PET scan. Par exemple, un scanner cérébral, un scanner des ovaires. Le but étant de comprendre si le cancer s’est propagé (présence de métastases) et si c’est le cas, où s’est-il propagé ?</p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Un second avis : </h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Dans mon cas, l’institut dans lequel j’ai été traitée a souhaité refaire les examens (la mammographie, l’échographie et la biopsie). C’est toujours une bonne pratique, les faux positifs, ça existe et ce serait dommage de se retrouver en traitement sur une erreur de diagnostic ... </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Lire les examens : </h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Les examens commencent souvent pour un paragraphe récapitulatif de notre situation. Puis, le déroulement et le résultat de l’examen. Enfin, la conclusion tirée de l’examen.</p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>La mammographie <br> (« la machine qui compresse les seins ») :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Très honnêtement, je ne sais toujours pas regarder une mammographie. Mais à comparer entre un cliché sein et un cliché malade, nous devons voir une zone plus foncée (« surdensité ») à l’endroit où se trouve la tumeur. <br>
+        Sur certains clichés, les radiologues essayent de distinguer des foyers de microcalcifications. Ce sont des dépôts de calcium. En cas de cancers, cela veut dire que les cellules sont plus actives. Or, les cellules plus actives absorbent davantage de calcium. La présence de ces grappes de microcalcifications permet de donner des informations supplémentaires au radiologue sur le diagnostic mais ces dépôts de calcium ne sont pas obligatoires. Nous pouvons avoir un cancer du sein sans avoir de foyer de microcalcifications.
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>L’échographie <br> (« la machine qui voit dans notre corps avec du gel ») :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>L’échographie permet au radiologue de connaître la nature de la tumeur. S’il y a une présence de liquide (ce qui pourrait évoquer un kyste) ou s’il est de nature solide. Cependant, une tumeur maligne peut également avoir une partie liquidienne. <br>
+        En cas de doute, le radiologue va effectuer une biopsie grâce à l’échographie.
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>La biopsie <br> (« prélever des cellules de la tumeur pour l’analyser en laboratoire ») :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Alors oui, la biopsie ça fait, en général, un peu mal. Il ne faut pas l’oublier, surtout quand on passe la deuxième fois. L’aiguille repasse par des endroits en lésions mais la douleur est soutenable. Les médecins font une petite anesthésie locale. N’hésitons pas à leur dire si l’anesthésie est en train de partir.
+        <br>
+        Le médecin radiologue se sert de l’échographie pour guider son aiguille. Le médecin prélève plusieurs (en général 3) échantillons de cellules de la tumeur. Chaque échantillon correspond à un endroit particulier de la tumeur. En laboratoire, cela permet de savoir si la tumeur est présente sur un échantillon sur 3, sur les 2 ou sur les 3.
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Les résultats de la mammographie et de l’échographie :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Le médecin, en fonction des résultats, va proposer une catégorie d’ACR pour le sein (droit ou gauche). Pour les plus curieuses, ACR est un système de classification créé par l’American College of Radiologie (d’où ACR). Il y en a 6 qui suivent la règle suivante (1 lien vers) :
+        <br>
+        • <strong>ACR 0</strong> : en attente, informations supplémentaires nécessaires <br>
+        • <strong>ACR 1</strong> : normale <br>
+        • <strong>ACR 2</strong> : existence d’anomalies bénignes, pas de surveillances nécessaires <br>
+        • <strong>ACR 3</strong> : existence d’une anomalie probablement bénigne, surveillance à court terme (3 ou 6 mois) conseillée <br>
+        • <strong>ACR 4</strong> : existence d’une anomalie indéterminée ou suspecte <br>
+        • <strong>ACR 5</strong> : existence d’une anomalie évocatrice d’un cancer
+        <br>
+        Pour confirmer si l’anomalie est un cancer ou non, nous devons attendre les résultats de la biopsie.
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Les résultats de la biopsie :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>
+        La feuille qui vous est rendue ne comporte pas les résultats mais les détails du déroulement de la biopsie. Les résultats arrivent environ 10 jours plus tard chez le médecin qui vous a envoyé faire les examens (en général le ou la gynéco). C’est le ou la gynéco qui se charge de vous donner et de vous expliquer les résultats.
+        <br>
+        La feuille de résultats rappelle les conditions de la biopsie, les informations à ce jour connues (comme l’ACR par exemple) et le déroulement de la petite opération. La partie cruciale est celle des Résultats Histologiques.
+        <br>
+        Dans cette partie, le résultat annonce normalement s’il s’agit d’un cancer, et si c’est le cas, s’il appartient à la grosse famille des carcinomes in situ ou des carcinomes infiltrants. On y annonce également pleins de choses mais une des informations à garder en tête est le grade.
+        Il est important de ne pas confondre grade et stade. Le grade donne une idée sur la vitesse d’évolution et l’agressivité de la tumeur. Il en existe 3 (I, II, III).
+        <br>
+        • <strong>Grade I</strong> : tumeurs considérées les moins agressives <br>
+        • <strong>Grade II</strong> : tumeurs considérées modérément agressives <br>
+        • <strong>Grade III</strong> : tumeurs considérées les plus agressives
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>En cas de cancer :</h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>Les examens reviennent avec des informations complémentaires pour savoir si notre cancer est de type hormonal (ce qui aura une incidence sur la suite du traitement) ou non (cancer dit de type « triple négatif »). Plus précisément, les médecins ont besoin de savoir si nos cellules cancéreuses comportent des récepteurs (comme des petits bras qui réceptionnent) hormonaux. Il existe 3 types d’hormones : les œstrogènes, la progestérone et celui qu’on appelle HER2.
+        <br>
+        Si les cellules comportent un ou plusieurs types de récepteurs alors les médecins rajouteront une thérapie hormonale (prises d’hormones) après tous les traitements « standard » pour contrôler la maladie.
+        <br>
+        En cas d’absence de récepteurs, le cancer est dit de type « triple négatif ».
+        </p>
+      </div>
+    </div>
+    <div class="question-section">
+      <div class="question-subtitle-title col-md-4">
+        <h3>Le bilan d’extension : </h3>
+      </div>
+      <div class="question-subtitle-text col-md-8">
+        <p>L’IRM mammaire, non-obligatoire, permet d’avoir une image extrêmement claire de la tumeur et de voir si des ganglions ont déjà été touchés. Les ganglions sont en général le premier portail de propagation du cancer et le nombre de ganglions touchés déterminent également le stade du cancer.</p>
+      </div>
+    </div>
   </div>
 </div>

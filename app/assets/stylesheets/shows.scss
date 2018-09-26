@@ -2,18 +2,15 @@ $shampoo: #FFCCFC;
 $fluo-pink: #E53CBC;
 
 .question-article {
-
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-top: 100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .question-article-text {
@@ -23,8 +20,30 @@ $fluo-pink: #E53CBC;
 .question-article-title {
   padding-top: 50px;
   padding-bottom: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    width: 60%;
+  }
 }
 
 .question-article-banner {
   width: 50%;
+  margin-bottom: 100px;
+}
+
+hr {
+  margin-top: 40px !important;
+  margin-bottom: 100px !important;
+  border: 0.5px solid black !important;
+  // border-top: 1px solid black !important;
+  width: 30%;
+}
+
+.question-section {
+  display: flex;
+  margin-top: 30px;
 }
