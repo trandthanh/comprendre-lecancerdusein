@@ -30,6 +30,7 @@ $fluo-pink: #E53CBC;
   }
   p {
     width: 60%;
+    font-size: 16px;
   }
 }
 
@@ -57,3 +58,87 @@ hr {
     color: $fluo-pink;
   }
 }
+
+.quotidien-article-image {
+  width: 80%;
+}
+
+.quotidien-article-right {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+
+.quotidien-article-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px !important;
+}
+
+.quotidien-article-title {
+  h1 {
+    color: $fluo-pink;
+  }
+
+}
+
+.quotidien-article-description {
+  p {
+    font-size: 16px;
+  }
+}
+
+.quotidien-article-upper {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  background-color: $shampoo;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+}
+
+.quotidien-section {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  p {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  h3 {
+    color: $fluo-pink;
+  }
+}
+
+
+.quotidien-section-links {
+  margin-top: 150px;
+}
+
+
+.partner-logos {
+  width: 200px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.show-links {
+
+    color: $shampoo;
+    text-decoration: underline;
+
+}
+
+.groupe-de-logos {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
