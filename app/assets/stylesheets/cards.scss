@@ -87,7 +87,7 @@ $beige: #FADEDE;
 
 // Width Maximum 1024px
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
 
   .page-questions-card-body {
     display: flex;
@@ -164,3 +164,93 @@ $beige: #FADEDE;
   }
 
 }
+
+// Width Maximum 768px
+
+@media only screen and (max-device-width: 666px) {
+
+  .page-questions-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .page-questions-row {
+    margin-top: 80px;
+  }
+
+  .page-questions-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      margin-top: 30px;
+      width: 450px;
+      color: black;
+      height: 35px;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin-top: 30px;
+      width: 600px;
+      height: 80px;
+    }
+  }
+
+  .page-quotidiens-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-quotidiens-cards-item {
+    margin-top: 10px;
+    background-image: image-url("pink-paint-brush.png");
+    background-size: contain;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .round {
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    border: 5px solid white;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+  }
+
+  .page-entendus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tango-pink;
+    background-image: image-url("pinkpaint.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  }
+
+  .page-questions-card-item {
+    margin-bottom: 20px;
+  }
+
+}
+

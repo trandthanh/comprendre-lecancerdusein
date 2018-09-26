@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
+// Width Minimum 1025px
+
+@media only screen and (min-device-width: 667px) {
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -11,4 +15,25 @@ body {
   p {
     margin: 0;
   }
+}
+
+}
+
+// Width Maximum 768px
+
+@media only screen and (max-device-width: 666px) {
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
 }

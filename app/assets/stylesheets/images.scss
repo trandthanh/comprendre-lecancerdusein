@@ -64,7 +64,7 @@ $light-pink: #FFE4EF;
 
 // Width Maximum 1024px
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
 
 .full-banner {
   background-image: image-url("enter-background.png");
@@ -123,3 +123,64 @@ $light-pink: #FFE4EF;
 
 }
 
+
+// Width Maximum 768px
+
+@media only screen and (max-device-width: 666px) {
+
+.full-banner {
+  background-image: image-url("enter-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medium-logo {
+  opacity: 1;
+  height: 100px;
+}
+
+.small-logo {
+  opacity: 1;
+  height: 80px;
+}
+
+.navbar-logo {
+  opacity: 1;
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.half-page-illustration {
+  background-image: image-url("home-illustration6.png");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.dot-two {
+  background-image: image-url("dot5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.question-card-image {
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  width: 350px;
+}
+
+.page-sources-logos {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+}

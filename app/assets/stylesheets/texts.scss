@@ -119,7 +119,7 @@ a {
 
 // Width Maximum 1024px
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-width: 667px) {
 
 .banner-title {
   font-size: 70px;
@@ -235,7 +235,7 @@ a {
 
 // Width Maximum 768px
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 666px) {
 
   .banner-title {
     font-size: 70px;
@@ -284,7 +284,7 @@ a {
   }
 
   .p-small {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .page-upper-left-text-item {

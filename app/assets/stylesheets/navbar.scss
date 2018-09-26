@@ -5,7 +5,7 @@ $light-pink: #FFE4EF;
 
 // Width Minimum 1025px
 
-@media only screen and (min-device-width: 769px) {
+@media only screen and (min-device-width: 667px) {
 
 .navbar {
   display: flex;
@@ -61,7 +61,7 @@ i {
 
 // Width Maximum 768px
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 666px) {
 
 .navbar {
   display: flex;
@@ -82,8 +82,8 @@ i {
   display: flex;
   flex-direction: row;
   width: 10%;
-  justify-content: flex-end;
-  padding-right: 40px;
+  justify-content: center;
+  margin: 0;
 }
 
 .navbar-middle-item {

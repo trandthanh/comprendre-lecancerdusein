@@ -118,7 +118,7 @@ $fluo-pink: #E53CBC;
 
 // Width Maximum 1024px and Width Minimum 769px
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
 
 .page-upper-left {
   width: 50%;
@@ -226,7 +226,7 @@ $fluo-pink: #E53CBC;
 
 // Width Maximum 768px
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 666px) {
 
   .page-upper-left {
     width: 50%;
@@ -253,7 +253,7 @@ $fluo-pink: #E53CBC;
   .page-questions {
     margin-top: 50px;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -263,7 +263,7 @@ $fluo-pink: #E53CBC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 60vh;
+    height: 45vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;

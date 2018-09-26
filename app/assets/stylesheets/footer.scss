@@ -5,6 +5,10 @@ $tango-pink: #EF7674;
 $pale-pink: #FFDDDD;
 $fluo-pink: #E53CBC;
 
+// Width Minimum 1025px
+
+@media only screen and (min-device-width: 667px) {
+
 .footer {
   height: 40vh;
   background-color: $tuscany;
@@ -76,5 +80,86 @@ $fluo-pink: #E53CBC;
   p {
     font-size: 12px;
   }
+}
+
+}
+
+// Width Maximum 1024px and Width Minimum 769px
+
+@media only screen and (max-device-width: 666px) {
+
+.footer {
+  height: 40vh;
+  background-color: $tuscany;
+  p {
+    font-size: 20px;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  .small-logo {
+    margin-left: 50px;
+  }
+  p {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-center: center;
+  flex-direction: column;
+}
+
+.footer-right-item {
+  p {
+    font-size: 25px;
+    color: white;
+    &:hover {
+      color: $fluo-pink;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $melon;
+    }
+  }
+}
+
+.footer-right-item-contact {
+  p {
+    font-size: 25px;
+    color: $fluo-pink;
+  }
+}
+
+.footer-right-items {
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.below-footer {
+  height: 50px;
+  background-color: $melon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    color: $fluo-pink;
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
 }
 

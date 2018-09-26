@@ -1,6 +1,10 @@
 $nadeshiko-pink: #F5B0CB;
 $melon: #FAB3A9;
 
+// Width Minimum 1025px
+
+@media only screen and (min-device-width: 667px) {
+
 .butt-pink {
   color: white;
   padding: 20px 20px;
@@ -19,4 +23,36 @@ $melon: #FAB3A9;
 .butt-test {
   display: flex;
   justify-content: center;
+}
+
+}
+
+
+// Width Maximum 768px
+
+@media only screen and (max-device-width: 666px) {
+
+.butt-pink {
+  color: white;
+  padding: 20px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: $nadeshiko-pink;
+  transition: background 0.3s ease;
+}
+.butt-pink:hover {
+  opacity: 1;
+  background: $melon;
+  text-decoration: none;
+  color: white;
+}
+
+.butt-test {
+  display: flex;
+  justify-content: center;
+  p {
+    font-size: 25px;
+  }
+}
+
 }
