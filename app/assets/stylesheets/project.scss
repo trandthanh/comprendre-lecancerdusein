@@ -1,0 +1,56 @@
+$portrait-gray: #F1F1F1;
+
+.photo-portrait {
+  height: 50vh;
+}
+
+.project-page {
+  background-color: $portrait-gray;
+  padding-top: 100px;
+}
+
+.project-story {
+  margin-top: 50px;
+  p {
+    width: 50%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  margin-top: 100px;
+}
+
+.project-description {
+  p {
+    width: 50%;
+  }
+}
+
+.project-subtitle {
+  margin-bottom: 30px;
+}
+
+.project-subdescription {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-illustrations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+
+.project-illustrations-photos {
+  height: 30vh;
+  margin-left: 15px;
+  margin-right: 15px;
+}

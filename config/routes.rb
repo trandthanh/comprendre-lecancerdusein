@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "pages#enter"
 
   get 'home', to: 'pages#home', as: :home
+  get 'project', to: 'pages#project', as: :project
 
 
   # Questions

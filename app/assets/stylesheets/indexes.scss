@@ -99,6 +99,13 @@ $lavender-blush: #FFEFFC;
   justify-content: center;
 }
 
+.index-entendu-story-half-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .sticker {
   position: absolute;
   height: 80px;
@@ -108,4 +115,8 @@ $lavender-blush: #FFEFFC;
 
 .index-entendu-story-right:last-child {
   margin-bottom: 150px;
+}
+
+.entendu-title {
+  margin-left: 50px;
 }

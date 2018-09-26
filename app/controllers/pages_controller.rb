@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
     @entendus = Entendu.all
   end
+
+  def project
+  end
 end
