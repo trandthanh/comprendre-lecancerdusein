@@ -2,6 +2,11 @@ $fluo-pink: #E53CBC;
 $nadeshiko-pink: #F5B0CB;
 $light-pink: #FFE4EF;
 
+
+// Width Minimum 1025px
+
+@media only screen and (min-device-width: 769px) {
+
 .navbar {
   display: flex;
   align-items: center;
@@ -50,4 +55,65 @@ i {
 .half-pink {
   background-color: $light-pink;
   width: 50%;
+}
+
+}
+
+// Width Maximum 768px
+
+@media only screen and (max-device-width: 768px) {
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.navbar-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.navbar-middle-item {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $fluo-pink;
+    }
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+i {
+  color: $fluo-pink;
+  font-size: 30px;
+}
+
+.navbar-left {
+  width: 30%;
+}
+
+.half-pink {
+  background-color: $light-pink;
+  width: 50%;
+}
+
 }

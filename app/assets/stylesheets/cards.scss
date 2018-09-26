@@ -87,7 +87,7 @@ $beige: #FADEDE;
 
 // Width Maximum 1024px
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
 
   .page-questions-card-body {
     display: flex;

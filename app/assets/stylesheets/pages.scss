@@ -116,9 +116,9 @@ $fluo-pink: #E53CBC;
 
 }
 
-// Width Maximum 1024px
+// Width Maximum 1024px and Width Minimum 769px
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
 
 .page-upper-left {
   width: 50%;
@@ -221,5 +221,113 @@ $fluo-pink: #E53CBC;
 .source-logo {
   margin: 20px;
 }
+
+}
+
+// Width Maximum 768px
+
+@media only screen and (max-width: 768px) {
+
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-upper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
 
 }

@@ -1,3 +1,7 @@
+// Width Minimum 1025px
+
+@media only screen and (min-width: 1025px) {
+
 .white-rectangle {
   background-color: white;
   height: 70%;
@@ -32,4 +36,102 @@
       text-decoration: none;
     }
   }
+}
+
+}
+
+
+
+
+
+// Width Maximum 1024px
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+.white-rectangle {
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-rectangle {
+  display: flex;
+  justify-content: center;
+}
+
+.mid-rectangle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.lower-rectangle {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+}
+
+// Width Maximum 768px
+
+@media only screen and (max-width: 768px) {
+
+.white-rectangle {
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-rectangle {
+  display: flex;
+  justify-content: center;
+}
+
+.mid-rectangle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.lower-rectangle {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 }
