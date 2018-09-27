@@ -1,39 +1,116 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
-// Width Minimum 1025px
-
-@media only screen and (min-device-width: 667px) {
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  h1, h2, h3, h4 {
-    font-family: 'Lora', serif;
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
   }
-  p {
-    margin: 0;
-  }
-}
-
-}
-
-// Width Maximum 768px
-
-@media only screen and (max-device-width: 666px) {
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  h1, h2, h3, h4 {
-    font-family: 'Lora', serif;
-    margin: 0;
-  }
-  p {
-    margin: 0;
-    font-size: 20px;
+  .row {
+    margin: 0 !important;
   }
 }
 
+/* big landscape tablets, laptops, and desktops */
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
 }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-device-width:961px) and (max-device-width: 1024px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-device-width:641px) and (max-device-width: 960px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-device-width:481px) and (max-device-width: 640px){
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-device-width:320px) and (max-device-width: 480px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+
+

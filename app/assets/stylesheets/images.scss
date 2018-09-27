@@ -1,186 +1,351 @@
 $light-pink: #FFE4EF;
 
-// Width Minimum 1025px
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
-@media only screen and (min-width: 1025px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.full-banner {
-  background-image: image-url("enter-background.png");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 30px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.medium-logo {
-  opacity: 1;
-  height: 100px;
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 30px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.small-logo {
-  opacity: 1;
-  height: 30px;
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px){
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 70px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 195px;
+    width: 280px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.navbar-logo {
-  opacity: 1;
-  height: 60px;
-  margin-top: 5px;
-  margin-left: 20px;
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 30px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 195px;
+    width: 280px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.half-page-illustration {
-  background-image: image-url("home-illustration6.png");
-  background-size: cover;
-  background-position: center;
-  height: 120vh;
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 80px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.dot-two {
-  background-image: image-url("dot5.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 480px) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 
-.question-card-image {
-  background-size: cover;
-  background-position: center center;
-  height: 250px;
-  width: 350px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.page-sources-logos {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+  }
 
-}
+  .small-logo {
+    opacity: 1;
+    height: 80px;
+  }
 
-// Width Maximum 1024px
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
 
-@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
 
-.full-banner {
-  background-image: image-url("enter-background.png");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+  }
 
-.medium-logo {
-  opacity: 1;
-  height: 100px;
-}
-
-.small-logo {
-  opacity: 1;
-  height: 30px;
-}
-
-.navbar-logo {
-  opacity: 1;
-  height: 60px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.half-page-illustration {
-  background-image: image-url("home-illustration6.png");
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-}
-
-.dot-two {
-  background-image: image-url("dot5.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.question-card-image {
-  background-size: cover;
-  background-position: center center;
-  height: 195px;
-  width: 280px;
-}
-
-.page-sources-logos {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-}
-
-
-// Width Maximum 768px
-
-@media only screen and (max-device-width: 666px) {
-
-.full-banner {
-  background-image: image-url("enter-background.png");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.medium-logo {
-  opacity: 1;
-  height: 100px;
-}
-
-.small-logo {
-  opacity: 1;
-  height: 80px;
-}
-
-.navbar-logo {
-  opacity: 1;
-  height: 60px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.half-page-illustration {
-  background-image: image-url("home-illustration6.png");
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-}
-
-.dot-two {
-  background-image: image-url("dot5.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.question-card-image {
-  background-size: cover;
-  background-position: center center;
-  height: 250px;
-  width: 350px;
-}
-
-.page-sources-logos {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

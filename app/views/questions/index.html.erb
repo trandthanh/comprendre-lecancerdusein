@@ -10,24 +10,26 @@
 </div>
 
 <div class="index-list">
-  <% @questions.each do |q| %>
-    <div class="col-md-4 col-s-12 text-center">
-      <div class="index-card-item">
-        <div class="page-questions-card-body text-center">
-          <%= image_tag "#{q.url}.png", class: "question-card-image" %>
-          <div class="page-questions-card-description">
-            <%= link_to question_path(q.url) do %>
-              <h3><%= q.title %></h3>
-            <% end %>
-            <p><%= q.description %></p>
-            <div class="page-question-card-link">
-              <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong>
+  <div class="row">
+    <% @questions.each do |q| %>
+      <div class="col-md-4 col-s-12 text-center">
+        <div class="index-card-item">
+          <div class="page-questions-card-body text-center">
+            <%= image_tag "#{q.url}.png", class: "question-card-image" %>
+            <div class="page-questions-card-description">
+              <%= link_to question_path(q.url) do %>
+                <h3><%= q.title %></h3>
+              <% end %>
+              <p><%= q.description %></p>
+              <div class="page-question-card-link">
+                <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
 
 <div class="supplement-info">

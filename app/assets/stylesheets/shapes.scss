@@ -1,137 +1,252 @@
 // Width Minimum 1025px
 
-@media only screen and (min-width: 1025px) {
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
 
-.white-rectangle {
-  background-color: white;
-  height: 70%;
-  width: 70%;
-  opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
 
-.upper-rectangle {
-  display: flex;
-  justify-content: center;
-}
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.mid-rectangle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.lower-rectangle {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-  a {
-    &:hover {
-      text-decoration: none;
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
 
-}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px) {
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
 
-
-
-
-
-// Width Maximum 1024px
-
-@media only screen and (max-width: 1024px) and (min-width: 667px) {
-
-.white-rectangle {
-  background-color: white;
-  height: 70%;
-  width: 70%;
-  opacity: 0.9;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.upper-rectangle {
-  display: flex;
-  justify-content: center;
-}
-
-.mid-rectangle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  p {
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-.lower-rectangle {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-  a {
-    &:hover {
-      text-decoration: none;
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
 
-}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px) {
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
 
-// Width Maximum 768px
-
-@media only screen and (max-width: 666px) {
-
-.white-rectangle {
-  background-color: white;
-  height: 70%;
-  width: 70%;
-  opacity: 0.9;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.upper-rectangle {
-  display: flex;
-  justify-content: center;
-}
-
-.mid-rectangle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  p {
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-.lower-rectangle {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-  a {
-    &:hover {
-      text-decoration: none;
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px){
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px){
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 480px){
+  .white-rectangle {
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    opacity: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .upper-rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .lower-rectangle {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+

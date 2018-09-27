@@ -5,161 +5,461 @@ $tango-pink: #EF7674;
 $pale-pink: #FFDDDD;
 $fluo-pink: #E53CBC;
 
-// Width Minimum 1025px
-
-@media only screen and (min-device-width: 667px) {
-
-.footer {
-  height: 40vh;
-  background-color: $tuscany;
-  p {
-    font-size: 12px;
+/* hi-res laptops and desktops */
+@media (min-device-width:1281px) {
+  .footer {
+    height: 40vh;
+    background-color: $tuscany;
+    p {
+      font-size: 12px;
+    }
+    display: flex;
+    align-items: center;
   }
-  display: flex;
-  align-items: center;
-}
 
-.footer-left {
-  .small-logo {
+  .footer-left {
+    .small-logo {
+      margin-left: 50px;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-center: center;
+  }
+
+  .footer-right-item {
+    margin-left: 20px;
+    p {
+      font-size: 15px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
     margin-left: 50px;
-  }
-  p {
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-}
-
-.footer-right {
-  display: flex;
-  justify-content: flex-end;
-  align-center: center;
-}
-
-.footer-right-item {
-  margin-left: 20px;
-  p {
-    font-size: 15px;
-    color: white;
-    &:hover {
+    p {
+      font-size: 15px;
       color: $fluo-pink;
     }
   }
-  a {
-    &:hover {
-      text-decoration: none;
-      color: $melon;
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 }
 
-.footer-right-item-contact {
-  margin-left: 50px;
-  p {
-    font-size: 15px;
-    color: $fluo-pink;
+/* big landscape tablets, laptops, and desktops */
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
+  .footer {
+    height: 40vh;
+    background-color: $tuscany;
+    p {
+      font-size: 12px;
+    }
+    display: flex;
+    align-items: center;
   }
-}
 
-.footer-right-items {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.below-footer {
-  height: 50px;
-  background-color: $melon;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  i {
-    color: $fluo-pink;
-    font-size: 15px;
+  .footer-left {
+    .small-logo {
+      margin-left: 50px;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+    }
   }
-  p {
-    font-size: 12px;
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-center: center;
   }
-}
 
-}
-
-// Width Maximum 1024px and Width Minimum 769px
-
-@media only screen and (max-device-width: 666px) {
-
-.footer {
-  height: 40vh;
-  background-color: $tuscany;
-  p {
-    font-size: 20px;
+  .footer-right-item {
+    margin-left: 20px;
+    p {
+      font-size: 15px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
   }
-  display: flex;
-  align-items: center;
-}
 
-.footer-left {
-  .small-logo {
+  .footer-right-item-contact {
     margin-left: 50px;
-  }
-  p {
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-}
-
-.footer-right {
-  display: flex;
-  justify-content: flex-end;
-  align-center: center;
-  flex-direction: column;
-}
-
-.footer-right-item {
-  p {
-    font-size: 25px;
-    color: white;
-    &:hover {
+    p {
+      font-size: 15px;
       color: $fluo-pink;
     }
   }
-  a {
-    &:hover {
-      text-decoration: none;
-      color: $melon;
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 }
 
-.footer-right-item-contact {
-  p {
-    font-size: 25px;
-    color: $fluo-pink;
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-device-width:961px) and (max-device-width: 1024px) {
+  .footer {
+    height: 40vh;
+    background-color: $tuscany;
+    p {
+      font-size: 15px;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-left {
+    .small-logo {
+      margin-left: 50px;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-center: center;
+  }
+
+  .footer-right-item {
+    margin-left: 20px;
+    p {
+      font-size: 20px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
+    margin-left: 30px;
+    p {
+      font-size: 15px;
+      color: $fluo-pink;
+    }
+  }
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
   }
 }
 
-.footer-right-items {
-  width: 80%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-device-width:641px) and (max-device-width: 960px) {
+  .footer {
+    height: 40vh;
+    background-color: $tuscany;
+    p {
+      font-size: 12px;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-left {
+    .small-logo {
+      margin-left: 50px;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-center: center;
+  }
+
+  .footer-right-item {
+    margin-left: 20px;
+    p {
+      font-size: 15px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
+    margin-left: 50px;
+    p {
+      font-size: 15px;
+      color: $fluo-pink;
+    }
+  }
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
-.below-footer {
-  height: 50px;
-  background-color: $melon;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  i {
-    color: $fluo-pink;
-    font-size: 15px;
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-device-width:481px) and (max-device-width: 640px){
+  .footer {
+    height: 40vh;
+    background-color: $tuscany;
+    p {
+      font-size: 20px;
+    }
+    display: flex;
+    align-items: center;
   }
-  p {
-    font-size: 12px;
+
+  .footer-left {
+    .small-logo {
+      margin-left: 50px;
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-center: center;
+    flex-direction: column;
+  }
+
+  .footer-right-item {
+    p {
+      font-size: 25px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
+    p {
+      font-size: 25px;
+      color: $fluo-pink;
+    }
+  }
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-device-width:320px) and (max-device-width: 480px) {
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background-color: $tuscany;
+    p {
+      font-size: 25px;
+    }
+    padding: 130px;
+  }
+
+  .footer-left {
+    .small-logo {
+      height: 100px;
+    }
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    margin-top: 80px;
+  }
+
+  .footer-right-item {
+    p {
+      font-size: 30px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
+    p {
+      font-size: 30px;
+      color: $fluo-pink;
+    }
+  }
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 
 }
 

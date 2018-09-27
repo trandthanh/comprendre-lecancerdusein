@@ -3,120 +3,738 @@ $melon: #FAB3A9;
 $white-smoke: #F4F4F9;
 $lavender-blush: #FFEFFC;
 
-.index-banner {
-  background-image: image-url("liste-background.png");
-  background-size: cover;
-  background-position: center center;
-  height: 50vh;
-  display: flex;
-  justify-content: flex-end;
-}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.index-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.index-description {
-  margin-top: 50px;
-  width: 60%;
-}
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
 
-.index-list {
-  display: flex;
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
 
-.index-card-item {
-  margin-bottom: 50px;
-}
+  .index-card-item {
+    margin-bottom: 50px;
+  }
 
-.quotidien-list-item {
-  margin-bottom: 30px;
-  h3 {
+  .quotidien-list-item {
     margin-bottom: 30px;
-    color: $fluo-pink;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
   }
 
-  p {
-    width: 70%;
-    border-bottom: 1px solid black;
-    padding-bottom: 40px;
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
 
-  }
-  .no-line {
-    border-bottom: 0px solid white;
-  }
-  a {
-    color: black;
+  .quotidien-link {
+    color: $melon;
     &:hover {
-      text-decoration: none;
       color: black;
     }
   }
-}
 
-.quotidien-index-list {
-  display: flex;
-  flex-direction: column;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  padding-left: 80px;
-  background-color: $white-smoke;
-}
-
-.quotidien-link {
-  color: $melon;
-  &:hover {
-    color: black;
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
   }
+
+  .entendu-square {
+    height: 50vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.index-entendu-story-right {
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 70px;
-  margin-top: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  background-color: $lavender-blush;
-  position: relative;
-  box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px) {
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .index-card-item {
+    margin-bottom: 50px;
+  }
+
+  .quotidien-list-item {
+    margin-bottom: 30px;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
+
+  .quotidien-link {
+    color: $melon;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+  }
+
+  .entendu-square {
+    height: 50vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.entendu-square {
-  height: 70vh;
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px) {
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .index-card-item {
+    margin-bottom: 50px;
+  }
+
+  .quotidien-list-item {
+    margin-bottom: 30px;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
+
+  .quotidien-link {
+    color: $melon;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+  }
+
+  .entendu-square {
+    height: 30vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.index-entendu-story-half {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px) {
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .index-card-item {
+    margin-bottom: 50px;
+  }
+
+  .quotidien-list-item {
+    margin-bottom: 30px;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
+
+  .quotidien-link {
+    color: $melon;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+  }
+
+  .entendu-square {
+    height: 30vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.index-entendu-story-half-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px){
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .index-card-item {
+    margin-bottom: 50px;
+  }
+
+  .quotidien-list-item {
+    margin-bottom: 30px;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
+
+  .quotidien-link {
+    color: $melon;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+  }
+
+  .entendu-square {
+    height: 30vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.sticker {
-  position: absolute;
-  height: 80px;
-  left: 100px;
-  top: -40px;
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 480px) {
+  .index-banner {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .index-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .index-description {
+    margin-top: 50px;
+    width: 60%;
+  }
+
+  .index-list {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .index-card-item {
+    margin-bottom: 50px;
+  }
+
+  .quotidien-list-item {
+    margin-bottom: 30px;
+    h3 {
+      margin-bottom: 30px;
+      color: $fluo-pink;
+    }
+
+    p {
+      width: 70%;
+      border-bottom: 1px solid black;
+      padding-bottom: 40px;
+
+    }
+    .no-line {
+      border-bottom: 0px solid white;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .quotidien-index-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-color: $white-smoke;
+  }
+
+  .quotidien-link {
+    color: $melon;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .index-entendu-story-right {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: $lavender-blush;
+    position: relative;
+    box-shadow: 3px 6px 13px 0.5px rgba(143,143,143,1);
+  }
+
+  .entendu-square {
+    height: 30vh;
+  }
+
+  .index-entendu-story-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-entendu-story-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .sticker {
+    position: absolute;
+    height: 80px;
+    left: 100px;
+    top: -40px;
+  }
+
+  .index-entendu-story-right:last-child {
+    margin-bottom: 150px;
+  }
+
+  .entendu-title {
+    margin-left: 50px;
+  }
+
 }
 
-.index-entendu-story-right:last-child {
-  margin-bottom: 150px;
-}
 
-.entendu-title {
-  margin-left: 50px;
-}
+
+

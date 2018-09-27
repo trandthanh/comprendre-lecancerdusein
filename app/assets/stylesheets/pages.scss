@@ -8,226 +8,8 @@ $tango-pink: #EF7674;
 $pale-pink: #FFDDDD;
 $fluo-pink: #E53CBC;
 
-// Width Minimum 1025px
-
-@media only screen and (min-width: 1025px) {
-
-.page-upper-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-upper-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page-upper {
-  height: 120vh;
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-  background-color: $pale-pink;
-}
-
-.page-questions {
-  margin-top: 50px;
-  height: auto;
-  margin-bottom: 50px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.page-quotidien {
-  background-image: image-url("liste-background.png");
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.page-quotidien-right {
-  width: 50%;
-}
-
-.page-entendu {
-  height: 50vh;
-  // background-image: image-url("cloud4.png");
-  // background-size: cover;
-  // background-position: center;
-  display: flex;
-  background-color: $light-pink;
-}
-
-.page-entendu-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h1 {
-    color: black;
-    width: 80%;
-  }
-}
-
-.page-entendu-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-entendu-items {
-  display: flex;
-  flex-direction: row;
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-
-  }
-}
-
-.page-sources {
-  padding-top: 50px;
-  background-image: image-url("cloud2.png");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page-sources-logos {
-  margin-top: 50px;
-}
-
-.source-logo {
-  margin: 20px;
-}
-
-}
-
-// Width Maximum 1024px and Width Minimum 769px
-
-@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
-
-.page-upper-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-upper-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page-upper {
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-  background-color: $pale-pink;
-}
-
-.page-questions {
-  margin-top: 50px;
-  height: auto;
-  margin-bottom: 50px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.page-quotidien {
-  background-image: image-url("liste-background.png");
-  background-size: cover;
-  background-position: center center;
-  height: 60vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.page-quotidien-right {
-  width: 50%;
-}
-
-.page-entendu {
-  height: 50vh;
-  // background-image: image-url("cloud4.png");
-  // background-size: cover;
-  // background-position: center;
-  display: flex;
-  background-color: $light-pink;
-}
-
-.page-entendu-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h1 {
-    color: black;
-    width: 80%;
-  }
-}
-
-.page-entendu-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-entendu-items {
-  display: flex;
-  flex-direction: row;
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-
-  }
-}
-
-.page-sources {
-  padding-top: 50px;
-  background-image: image-url("cloud2.png");
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page-sources-logos {
-  margin-top: 50px;
-}
-
-.source-logo {
-  margin: 20px;
-}
-
-}
-
-// Width Maximum 768px
-
-@media only screen and (max-device-width: 666px) {
-
+/* hi-res laptops and desktops */
+@media (min-device-width:1281px) {
   .page-upper-left {
     width: 50%;
     display: flex;
@@ -240,6 +22,431 @@ $fluo-pink: #E53CBC;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .page-upper {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px){
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .page-upper {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px){
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .page-upper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px){
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .page-upper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px){
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
   }
 
   .page-upper {
@@ -329,5 +536,117 @@ $fluo-pink: #E53CBC;
   .source-logo {
     margin: 20px;
   }
-
 }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-device-width:320px) and (max-device-width: 480px){
+  .page-upper-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-upper-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .page-upper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $pale-pink;
+  }
+
+  .page-questions {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-quotidien {
+    background-image: image-url("liste-background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .page-quotidien-right {
+    width: 50%;
+  }
+
+  .page-entendu {
+    height: 50vh;
+    // background-image: image-url("cloud4.png");
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    background-color: $light-pink;
+  }
+
+  .page-entendu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: black;
+      width: 80%;
+    }
+  }
+
+  .page-entendu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-entendu-items {
+    display: flex;
+    flex-direction: row;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .page-sources {
+    padding-top: 50px;
+    background-image: image-url("cloud2.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+  }
+
+  .source-logo {
+    margin: 20px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,58 +1,146 @@
 $nadeshiko-pink: #F5B0CB;
 $melon: #FAB3A9;
 
-// Width Minimum 1025px
+/* hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
 
-@media only screen and (min-device-width: 667px) {
-
-.butt-pink {
-  color: white;
-  padding: 20px 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  background: $nadeshiko-pink;
-  transition: background 0.3s ease;
-}
-.butt-pink:hover {
-  opacity: 1;
-  background: $melon;
-  text-decoration: none;
-  color: white;
-}
-
-.butt-test {
-  display: flex;
-  justify-content: center;
-}
-
-}
-
-
-// Width Maximum 768px
-
-@media only screen and (max-device-width: 666px) {
-
-.butt-pink {
-  color: white;
-  padding: 20px 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  background: $nadeshiko-pink;
-  transition: background 0.3s ease;
-}
-.butt-pink:hover {
-  opacity: 1;
-  background: $melon;
-  text-decoration: none;
-  color: white;
-}
-
-.butt-test {
-  display: flex;
-  justify-content: center;
-  p {
-    font-size: 25px;
+  .butt-test {
+    display: flex;
+    justify-content: center;
   }
 }
 
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
+
+  .butt-test {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
+
+  .butt-test {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
+
+  .butt-test {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
+
+  .butt-test {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 480px) {
+  .butt-pink {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background: $nadeshiko-pink;
+    transition: background 0.3s ease;
+  }
+  .butt-pink:hover {
+    opacity: 1;
+    background: $melon;
+    text-decoration: none;
+    color: white;
+  }
+
+  .butt-test {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 25px;
+    }
+  }
 }

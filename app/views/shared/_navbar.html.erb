@@ -31,3 +31,35 @@
   </div>
 </div>
 
+<div class="navbar-mobile">
+  <div class="navbar-middle-mobile">
+    <%= link_to home_path do %>
+      <%= image_tag ("logo.png"), class: "navbar-logo" %>
+    <% end %>
+  </div>
+  <div class="navbar-menu-mobile">
+    <div class="navbar-mobile-item">
+      <%= link_to questions_path do %>
+        <p>Maladie</p>
+      <% end %>
+    </div>
+    <div class="navbar-mobile-item">
+      <%= link_to quotidiens_path do %>
+        <p>Quotidien</p>
+      <% end %>
+    </div>
+    <div class="navbar-mobile-item">
+      <%= link_to entendus_path do %>
+        <p>Entendus</p>
+      <% end %>
+    </div>
+    <div class="navbar-mobile-item">
+      <%= link_to project_path do %>
+        <p>Projet</p>
+      <% end %>
+    </div>
+    <div class="navbar-right">
+      <i class="fas fa-envelope"></i>
+    </div>
+  </div>
+</div>

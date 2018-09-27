@@ -5,90 +5,162 @@ $tango-pink: #EF7674;
 $pale-pink: #FFDDDD;
 $beige: #FADEDE;
 
-// Width Minimum 1025px
-
-@media only screen and (min-width: 1025px) {
-
-.page-questions-card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-questions-row {
-  margin-top: 80px;
-}
-
-.page-questions-card-description {
-  h3 {
-    margin-top: 30px;
-    width: 340px;
-    color: black;
-    height: 35px;
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .page-questions-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  a {
-    &:hover {
-      text-decoration: none;
+
+  .page-questions-row {
+    margin-top: 80px;
+  }
+
+  .page-questions-card-description {
+    h3 {
+      margin-top: 30px;
+      width: 340px;
+      color: black;
+      height: 35px;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin-top: 30px;
+      width: 350px;
+      height: 80px;
     }
   }
-  p {
-    margin-top: 30px;
-    width: 350px;
-    height: 80px;
+
+  .page-quotidiens-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-quotidiens-cards-item {
+    margin-top: 10px;
+    background-image: image-url("pink-paint-brush.png");
+    background-size: contain;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .round {
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    border: 5px solid white;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+  }
+
+  .page-entendus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tango-pink;
+    background-image: image-url("pinkpaint.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
   }
 }
 
-.page-quotidiens-cards {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1280px) {
+  .page-questions-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.page-quotidiens-cards-item {
-  margin-top: 10px;
-  background-image: image-url("pink-paint-brush.png");
-  background-size: contain;
-  height: 130px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .page-questions-row {
+    margin-top: 80px;
+  }
 
-.round {
-  background-color: $fluo-pink;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 30px;
-  border: 5px solid white;
-  box-shadow: 0.5px 0.5px 0.5px gray;
-}
+  .page-questions-card-description {
+    h3 {
+      margin-top: 30px;
+      width: 340px;
+      color: black;
+      height: 35px;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin-top: 30px;
+      width: 350px;
+      height: 80px;
+    }
+  }
 
-.page-entendus-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $tango-pink;
-  background-image: image-url("pinkpaint.png");
-  background-size: cover;
-  background-position: center;
-  &:hover {
-    opacity: 0.8;
-    color: white;
+  .page-quotidiens-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-quotidiens-cards-item {
+    margin-top: 10px;
+    background-image: image-url("pink-paint-brush.png");
+    background-size: contain;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .round {
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    border: 5px solid white;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+  }
+
+  .page-entendus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tango-pink;
+    background-image: image-url("pinkpaint.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
   }
 }
 
-}
-
-// Width Maximum 1024px
-
-@media only screen and (max-width: 1024px) and (min-device-width: 667px) {
-
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width: 1024px) {
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -162,13 +234,87 @@ $beige: #FADEDE;
       color: white;
     }
   }
-
 }
 
-// Width Maximum 768px
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 960px) {
+  .page-questions-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-@media only screen and (max-device-width: 666px) {
+  .page-questions-row {
+    margin-top: 80px;
+  }
 
+  .page-questions-card-description {
+    h3 {
+      margin-top: 30px;
+      width: 280px;
+      color: black;
+      height: 35px;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin-top: 30px;
+      width: 280px;
+      height: 80px;
+    }
+  }
+
+  .page-quotidiens-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-quotidiens-cards-item {
+    margin-top: 10px;
+    background-image: image-url("pink-paint-brush.png");
+    background-size: contain;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .round {
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    border: 5px solid white;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+  }
+
+  .page-entendus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tango-pink;
+    background-image: image-url("pinkpaint.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width: 640px){
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -251,6 +397,90 @@ $beige: #FADEDE;
   .page-questions-card-item {
     margin-bottom: 20px;
   }
-
 }
 
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 480px){
+  .page-questions-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .page-questions-row {
+    margin-top: 80px;
+  }
+
+  .page-questions-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      margin-top: 30px;
+      width: 450px;
+      color: black;
+      height: 35px;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      margin-top: 30px;
+      width: 600px;
+      height: 80px;
+    }
+  }
+
+  .page-quotidiens-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-quotidiens-cards-item {
+    margin-top: 10px;
+    background-image: image-url("pink-paint-brush.png");
+    background-size: contain;
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .round {
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    border: 5px solid white;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+  }
+
+  .page-entendus-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tango-pink;
+    background-image: image-url("pinkpaint.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  }
+
+  .page-questions-card-item {
+    margin-bottom: 20px;
+  }
+}
