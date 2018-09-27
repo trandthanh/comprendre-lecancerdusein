@@ -2,7 +2,7 @@ $nadeshiko-pink: #F5B0CB;
 $melon: #FAB3A9;
 
 /* hi-res laptops and desktops */
-@media (min-width: 1281px) {
+@media (min-device-width: 1281px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -25,7 +25,7 @@ $melon: #FAB3A9;
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) and (max-width: 1280px) {
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -48,7 +48,7 @@ $melon: #FAB3A9;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) and (max-width: 1024px) {
+@media (min-device-width:961px) and (max-device-width: 1024px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -71,7 +71,7 @@ $melon: #FAB3A9;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) and (max-width: 960px) {
+@media (min-device-width:641px) and (max-device-width: 960px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -94,7 +94,7 @@ $melon: #FAB3A9;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) and (max-width: 640px) {
+@media (min-device-width:481px) and (max-device-width: 640px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -120,7 +120,7 @@ $melon: #FAB3A9;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) and (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 480px) {
   .butt-pink {
     color: white;
     padding: 20px 20px;
@@ -140,7 +140,7 @@ $melon: #FAB3A9;
     display: flex;
     justify-content: center;
     p {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }

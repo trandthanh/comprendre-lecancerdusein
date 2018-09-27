@@ -4,7 +4,7 @@ $white-smoke: #F4F4F9;
 $lavender-blush: #FFEFFC;
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -126,7 +126,7 @@ $lavender-blush: #FFEFFC;
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) and (max-width: 1280px) {
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -248,7 +248,7 @@ $lavender-blush: #FFEFFC;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) and (max-width: 1024px) {
+@media (min-device-width:961px) and (max-device-width: 1024px) {
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -370,7 +370,7 @@ $lavender-blush: #FFEFFC;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) and (max-width: 960px) {
+@media (min-device-width:641px) and (max-device-width: 960px) {
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -492,7 +492,7 @@ $lavender-blush: #FFEFFC;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) and (max-width: 640px){
+@media (min-device-width:481px) and (max-device-width: 640px){
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -614,7 +614,7 @@ $lavender-blush: #FFEFFC;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) and (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 480px) {
   .index-banner {
     background-image: image-url("liste-background.png");
     background-size: cover;
@@ -622,6 +622,7 @@ $lavender-blush: #FFEFFC;
     height: 50vh;
     display: flex;
     justify-content: flex-end;
+    margin-top: 50px;
   }
 
   .index-right {
@@ -633,13 +634,17 @@ $lavender-blush: #FFEFFC;
 
   .index-description {
     margin-top: 50px;
-    width: 60%;
+    width: 50%;
+    p {
+      font-size: 25px;
+    }
   }
 
   .index-list {
     display: flex;
     margin-top: 150px;
     margin-bottom: 150px;
+    justify-content: center;
   }
 
   .index-card-item {
@@ -731,6 +736,17 @@ $lavender-blush: #FFEFFC;
 
   .entendu-title {
     margin-left: 50px;
+  }
+
+  .index-title {
+    width: 50%;
+  }
+
+  .index-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
 }
