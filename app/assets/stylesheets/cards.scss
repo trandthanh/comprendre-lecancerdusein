@@ -6,7 +6,7 @@ $pale-pink: #FFDDDD;
 $beige: #FADEDE;
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ $beige: #FADEDE;
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) and (max-width: 1280px) {
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ $beige: #FADEDE;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) and (max-width: 1024px) {
+@media (min-device-width:961px) and (max-device-width: 1024px) {
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ $beige: #FADEDE;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) and (max-width: 960px) {
+@media (min-device-width:641px) and (max-device-width: 960px) {
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@ $beige: #FADEDE;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) and (max-width: 640px){
+@media (min-device-width:481px) and (max-device-width: 640px){
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -400,7 +400,7 @@ $beige: #FADEDE;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) and (max-width: 480px){
+@media (min-device-width:320px) and (max-device-width: 480px){
   .page-questions-card-body {
     display: flex;
     flex-direction: column;
@@ -420,9 +420,10 @@ $beige: #FADEDE;
     justify-content: center;
     h3 {
       margin-top: 30px;
-      width: 450px;
+      width: 750px;
       color: black;
       height: 35px;
+      font-size: 35px;
     }
     a {
       &:hover {
@@ -431,8 +432,9 @@ $beige: #FADEDE;
     }
     p {
       margin-top: 30px;
-      width: 600px;
-      height: 80px;
+      width: 700px;
+      height: 170px;
+      font-size: 30px;
     }
   }
 
@@ -445,19 +447,19 @@ $beige: #FADEDE;
     margin-top: 10px;
     background-image: image-url("pink-paint-brush.png");
     background-size: contain;
-    height: 130px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
   }
 
   .round {
     background-color: $fluo-pink;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

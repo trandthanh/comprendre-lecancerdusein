@@ -2,7 +2,7 @@ $fluo-pink: #E53CBC;
 $melon: #FAB3A9;
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
@@ -76,7 +76,7 @@ $melon: #FAB3A9;
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) and (max-width: 1280px) {
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
@@ -150,7 +150,7 @@ $melon: #FAB3A9;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) and (max-width: 1024px) {
+@media (min-device-width:961px) and (max-device-width: 1024px) {
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
@@ -224,7 +224,7 @@ $melon: #FAB3A9;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) and (max-width: 960px){
+@media (min-device-width:641px) and (max-device-width: 960px){
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
@@ -298,7 +298,7 @@ $melon: #FAB3A9;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) and (max-width: 640px){
+@media (min-device-width:481px) and (max-device-width: 640px){
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
@@ -373,11 +373,11 @@ $melon: #FAB3A9;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) and (max-width: 480px){
+@media (min-device-width:320px) and (max-device-width: 480px){
   .pink-link {
     margin-top: 30px;
     color: $fluo-pink;
-    font-size: 20px;
+    font-size: 30px;
     &:hover {
       color: $melon;
     }
@@ -391,7 +391,7 @@ $melon: #FAB3A9;
     margin-top: 30px;
     background-image: image-url("gold-brush-stroke.png");
     background-size: contain;
-    height: 90px;
+    height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -399,6 +399,7 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-size: 25px;
     }
     a {
       text-decoration: none;
@@ -416,7 +417,7 @@ $melon: #FAB3A9;
   .page-questions-link {
     margin-top: 30px;
     background-image: image-url("gold-brush-stroke.png");
-    height: 90px;
+    height: 150px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -425,6 +426,7 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-size: 25px;
     }
     a {
       text-decoration: none;

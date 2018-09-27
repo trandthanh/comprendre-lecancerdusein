@@ -1,7 +1,7 @@
 $light-pink: #FFE4EF;
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -60,7 +60,7 @@ $light-pink: #FFE4EF;
 }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) and (max-width: 1280px) {
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -119,7 +119,7 @@ $light-pink: #FFE4EF;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px) and (max-width: 1024px){
+@media (min-device-width:961px) and (max-device-width: 1024px){
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -177,7 +177,7 @@ $light-pink: #FFE4EF;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px) and (max-width: 960px) {
+@media (min-device-width:641px) and (max-device-width: 960px) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -235,7 +235,7 @@ $light-pink: #FFE4EF;
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px) and (max-width: 640px) {
+@media (min-device-width:481px) and (max-device-width: 640px) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -293,7 +293,7 @@ $light-pink: #FFE4EF;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px) and (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 480px) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -338,8 +338,8 @@ $light-pink: #FFE4EF;
   .question-card-image {
     background-size: cover;
     background-position: center center;
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 400px;
   }
 
   .page-sources-logos {

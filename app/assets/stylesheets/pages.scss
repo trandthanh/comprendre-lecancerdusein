@@ -541,9 +541,11 @@ $fluo-pink: #E53CBC;
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-device-width:320px) and (max-device-width: 480px){
   .page-upper-left {
-    width: 50%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-upper-right {
@@ -556,15 +558,16 @@ $fluo-pink: #E53CBC;
   }
 
   .page-upper {
-    height: 70vh;
+    height: auto;
     display: flex;
     align-items: center;
     margin-top: 50px;
     background-color: $pale-pink;
+    flex-direction: column;
   }
 
   .page-questions {
-    margin-top: 50px;
+    margin-top: 80px;
     height: auto;
     margin-bottom: 100px;
 
@@ -576,23 +579,27 @@ $fluo-pink: #E53CBC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 45vh;
+    height: 55vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 
   .page-quotidien-right {
-    width: 50%;
+    padding-right: 30px;
+    width: 70%;
   }
 
   .page-entendu {
-    height: 50vh;
+    height: 40vh;
     // background-image: image-url("cloud4.png");
     // background-size: cover;
     // background-position: center;
     display: flex;
     background-color: $light-pink;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .page-entendu-left {
@@ -602,7 +609,7 @@ $fluo-pink: #E53CBC;
     justify-content: center;
     h1 {
       color: black;
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -619,8 +626,8 @@ $fluo-pink: #E53CBC;
       &:hover {
         text-decoration: none;
       }
-
     }
+    margin-top: 40px;
   }
 
   .page-sources {

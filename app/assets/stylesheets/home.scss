@@ -1,14 +1,99 @@
 $tea-rose: #F9C7C0;
 
-.supplement-info {
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $tea-rose;
+/* hi-res laptops and desktops */
+@media (min-device-width: 1281px) {
+  .supplement-info {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
 }
 
-.butt-supp {
-  margin-top: 30px;
+/* big landscape tablets, laptops, and desktops */
+@media (min-device-width:1025px) and (max-device-width: 1280px) {
+  .supplement-info {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
 }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-device-width:961px) and (max-device-width: 1024px) {
+  .supplement-info {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-device-width:641px) and (max-device-width: 960px) {
+  .supplement-info {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-device-width:481px) and (max-device-width: 640px) {
+  .supplement-info {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-device-width:320px) and (max-device-width: 480px) {
+  .supplement-info {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $tea-rose;
+  }
+
+  .butt-supp {
+    margin-top: 30px;
+  }
+}
+
+
