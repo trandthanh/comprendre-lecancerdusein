@@ -656,13 +656,14 @@ $lavender-blush: #FFEFFC;
     h3 {
       margin-bottom: 30px;
       color: $fluo-pink;
+      font-size: 35px;
     }
 
     p {
       width: 70%;
       border-bottom: 1px solid black;
       padding-bottom: 40px;
-
+      font-size: 25px;
     }
     .no-line {
       border-bottom: 0px solid white;
@@ -687,6 +688,7 @@ $lavender-blush: #FFEFFC;
 
   .quotidien-link {
     color: $melon;
+    font-size: 25px;
     &:hover {
       color: black;
     }
@@ -726,7 +728,7 @@ $lavender-blush: #FFEFFC;
   .sticker {
     position: absolute;
     height: 80px;
-    left: 100px;
+    left: 60px;
     top: -40px;
   }
 
