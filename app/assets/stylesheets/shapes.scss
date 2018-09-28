@@ -124,87 +124,87 @@
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px) and (max-width: 960px){
   .white-rectangle {
-    background-color: white;
-    height: 70%;
-    width: 70%;
-    opacity: 0.9;
+      background-color: white;
+      height: 70%;
+      width: 70%;
+      opacity: 0.9;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .upper-rectangle {
-    display: flex;
-    justify-content: center;
-  }
-
-  .mid-rectangle {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-  }
 
-  .lower-rectangle {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    a {
-      &:hover {
-        text-decoration: none;
+    .upper-rectangle {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mid-rectangle {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 20px;
       }
     }
-  }
+
+    .lower-rectangle {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      align-items: center;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:481px) and (max-width: 640px){
   .white-rectangle {
-    background-color: white;
-    height: 70%;
-    width: 70%;
-    opacity: 0.9;
+      background-color: white;
+      height: 70%;
+      width: 70%;
+      opacity: 0.9;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .upper-rectangle {
-    display: flex;
-    justify-content: center;
-  }
-
-  .mid-rectangle {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-  }
 
-  .lower-rectangle {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    a {
-      &:hover {
-        text-decoration: none;
+    .upper-rectangle {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mid-rectangle {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 20px;
       }
     }
-  }
+
+    .lower-rectangle {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      align-items: center;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */

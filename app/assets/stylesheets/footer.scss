@@ -236,35 +236,35 @@ $fluo-pink: #E53CBC;
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-device-width:641px) and (max-device-width: 960px) {
   .footer {
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
     background-color: $tuscany;
     p {
-      font-size: 12px;
+      font-size: 25px;
     }
-    display: flex;
-    align-items: center;
+    padding: 80px;
   }
 
   .footer-left {
     .small-logo {
-      margin-left: 50px;
+      height: 100px;
     }
     p {
-      margin-top: 20px;
-      margin-left: 50px;
+      margin-top: 40px;
     }
   }
 
   .footer-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-center: center;
+    margin-top: 80px;
   }
 
   .footer-right-item {
-    margin-left: 20px;
     p {
-      font-size: 15px;
+      font-size: 30px;
       color: white;
       &:hover {
         color: $fluo-pink;
@@ -279,9 +279,8 @@ $fluo-pink: #E53CBC;
   }
 
   .footer-right-item-contact {
-    margin-left: 50px;
     p {
-      font-size: 15px;
+      font-size: 30px;
       color: $fluo-pink;
     }
   }
@@ -291,6 +290,7 @@ $fluo-pink: #E53CBC;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .below-footer {
@@ -312,35 +312,35 @@ $fluo-pink: #E53CBC;
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-device-width:481px) and (max-device-width: 640px){
   .footer {
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
     background-color: $tuscany;
     p {
-      font-size: 20px;
+      font-size: 25px;
     }
-    display: flex;
-    align-items: center;
+    padding: 130px;
   }
 
   .footer-left {
     .small-logo {
-      margin-left: 50px;
+      height: 100px;
     }
     p {
-      margin-top: 20px;
-      margin-left: 50px;
+      margin-top: 40px;
     }
   }
 
   .footer-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-center: center;
-    flex-direction: column;
+    margin-top: 80px;
   }
 
   .footer-right-item {
     p {
-      font-size: 25px;
+      font-size: 30px;
       color: white;
       &:hover {
         color: $fluo-pink;
@@ -356,7 +356,7 @@ $fluo-pink: #E53CBC;
 
   .footer-right-item-contact {
     p {
-      font-size: 25px;
+      font-size: 30px;
       color: $fluo-pink;
     }
   }
@@ -364,7 +364,7 @@ $fluo-pink: #E53CBC;
   .footer-right-items {
     width: 80%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
   }

@@ -51,7 +51,7 @@ $tea-rose: #F9C7C0;
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-device-width:641px) and (max-device-width: 960px) {
   .supplement-info {
-    height: 40vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@ $tea-rose: #F9C7C0;
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-device-width:481px) and (max-device-width: 640px) {
   .supplement-info {
-    height: 40vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;

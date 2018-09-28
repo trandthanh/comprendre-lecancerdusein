@@ -243,6 +243,7 @@ $beige: #FADEDE;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
   }
 
   .page-questions-row {
@@ -250,11 +251,16 @@ $beige: #FADEDE;
   }
 
   .page-questions-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     h3 {
       margin-top: 30px;
-      width: 280px;
+      width: 750px;
       color: black;
       height: 35px;
+      font-size: 35px;
     }
     a {
       &:hover {
@@ -263,8 +269,9 @@ $beige: #FADEDE;
     }
     p {
       margin-top: 30px;
-      width: 280px;
-      height: 80px;
+      width: 700px;
+      height: 170px;
+      font-size: 30px;
     }
   }
 
@@ -277,19 +284,19 @@ $beige: #FADEDE;
     margin-top: 10px;
     background-image: image-url("pink-paint-brush.png");
     background-size: contain;
-    height: 130px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
   }
 
   .round {
     background-color: $fluo-pink;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,6 +317,10 @@ $beige: #FADEDE;
       opacity: 0.8;
       color: white;
     }
+  }
+
+  .page-questions-card-item {
+    margin-bottom: 20px;
   }
 }
 
@@ -334,9 +345,10 @@ $beige: #FADEDE;
     justify-content: center;
     h3 {
       margin-top: 30px;
-      width: 450px;
+      width: 750px;
       color: black;
       height: 35px;
+      font-size: 35px;
     }
     a {
       &:hover {
@@ -345,8 +357,9 @@ $beige: #FADEDE;
     }
     p {
       margin-top: 30px;
-      width: 600px;
-      height: 80px;
+      width: 700px;
+      height: 170px;
+      font-size: 30px;
     }
   }
 
@@ -359,19 +372,19 @@ $beige: #FADEDE;
     margin-top: 10px;
     background-image: image-url("pink-paint-brush.png");
     background-size: contain;
-    height: 130px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
   }
 
   .round {
     background-color: $fluo-pink;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

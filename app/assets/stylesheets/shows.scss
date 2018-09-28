@@ -2,7 +2,7 @@ $shampoo: #FFCCFC;
 $fluo-pink: #E53CBC;
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   .question-article {
     padding-left: 50px;
     padding-right: 50px;
@@ -350,7 +350,7 @@ $fluo-pink: #E53CBC;
   }
 
   .quotidien-article-image {
-    width: 80%;
+    width: 100%;
   }
 
   .quotidien-article-right {
@@ -464,7 +464,7 @@ $fluo-pink: #E53CBC;
     }
     p {
       width: 60%;
-      font-size: 16px;
+      font-size: 25px;
     }
   }
 
@@ -501,17 +501,18 @@ $fluo-pink: #E53CBC;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     p {
       margin-top: 40px;
-      width: 80%;
+      font-size: 25px;
     }
   }
 
   .quotidien-article-left {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 50px !important;
+    justify-content: center;
   }
 
   .quotidien-article-title {
@@ -522,8 +523,9 @@ $fluo-pink: #E53CBC;
   }
 
   .quotidien-article-description {
+    text-align: center;
     p {
-      font-size: 16px;
+      font-size: 25px;
     }
   }
 
@@ -531,6 +533,7 @@ $fluo-pink: #E53CBC;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: $shampoo;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -574,6 +577,18 @@ $fluo-pink: #E53CBC;
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .question-subtitle-title {
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  .question-subtitle-text {
+    p {
+      font-size: 25px;
+    }
   }
 }
 
@@ -608,7 +623,7 @@ $fluo-pink: #E53CBC;
     }
     p {
       width: 60%;
-      font-size: 16px;
+      font-size: 25px;
     }
   }
 
@@ -645,17 +660,18 @@ $fluo-pink: #E53CBC;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     p {
       margin-top: 40px;
-      width: 80%;
+      font-size: 25px;
     }
   }
 
   .quotidien-article-left {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 50px !important;
+    justify-content: center;
   }
 
   .quotidien-article-title {
@@ -666,8 +682,9 @@ $fluo-pink: #E53CBC;
   }
 
   .quotidien-article-description {
+    text-align: center;
     p {
-      font-size: 16px;
+      font-size: 25px;
     }
   }
 
@@ -675,6 +692,7 @@ $fluo-pink: #E53CBC;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: $shampoo;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -718,6 +736,18 @@ $fluo-pink: #E53CBC;
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .question-subtitle-title {
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  .question-subtitle-text {
+    p {
+      font-size: 25px;
+    }
   }
 }
 

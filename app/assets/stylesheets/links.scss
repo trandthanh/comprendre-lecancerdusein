@@ -226,150 +226,155 @@ $melon: #FAB3A9;
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-device-width:641px) and (max-device-width: 960px){
   .pink-link {
-    margin-top: 30px;
-    color: $fluo-pink;
-    &:hover {
-      color: $melon;
-    }
-  }
-
-  .page-question-card-link {
-    margin-top: 20px;
-  }
-
-  .page-entendus-link {
-    margin-top: 30px;
-    background-image: image-url("gold-brush-stroke.png");
-    background-size: contain;
-    height: 90px;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    p {
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: black;
+      margin-top: 30px;
+      color: $fluo-pink;
+      font-size: 30px;
       &:hover {
-        text-decoration: none;
-        color: white;
+        color: $melon;
       }
     }
-    &:hover {
-      text-decoration: none;
-    }
-  }
 
-  .page-questions-link {
-    margin-top: 30px;
-    background-image: image-url("gold-brush-stroke.png");
-    height: 90px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    p {
-      margin-top: 10px;
+    .page-question-card-link {
+      margin-top: 20px;
     }
-    a {
-      text-decoration: none;
-      color: black;
+
+    .page-entendus-link {
+      margin-top: 30px;
+      background-image: image-url("gold-brush-stroke.png");
+      background-size: contain;
+      height: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
       &:hover {
         text-decoration: none;
-        color: white;
       }
     }
-    &:hover {
-      text-decoration: none;
-    }
-  }
 
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
+    .page-questions-link {
+      margin-top: 30px;
+      background-image: image-url("gold-brush-stroke.png");
+      height: 150px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      &:hover {
+        text-decoration: none;
+      }
     }
-  }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-device-width:481px) and (max-device-width: 640px){
   .pink-link {
-    margin-top: 30px;
-    color: $fluo-pink;
-    font-size: 20px;
-    &:hover {
-      color: $melon;
-    }
-  }
-
-  .page-question-card-link {
-    margin-top: 20px;
-  }
-
-  .page-entendus-link {
-    margin-top: 30px;
-    background-image: image-url("gold-brush-stroke.png");
-    background-size: contain;
-    height: 90px;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    p {
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: black;
+      margin-top: 30px;
+      color: $fluo-pink;
+      font-size: 30px;
       &:hover {
-        text-decoration: none;
-        color: white;
+        color: $melon;
       }
     }
-    &:hover {
-      text-decoration: none;
-    }
-  }
 
-  .page-questions-link {
-    margin-top: 30px;
-    background-image: image-url("gold-brush-stroke.png");
-    height: 90px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    p {
-      margin-top: 10px;
+    .page-question-card-link {
+      margin-top: 20px;
     }
-    a {
-      text-decoration: none;
-      color: black;
+
+    .page-entendus-link {
+      margin-top: 30px;
+      background-image: image-url("gold-brush-stroke.png");
+      background-size: contain;
+      height: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
       &:hover {
         text-decoration: none;
-        color: white;
       }
     }
-    &:hover {
-      text-decoration: none;
-    }
-  }
 
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
+    .page-questions-link {
+      margin-top: 30px;
+      background-image: image-url("gold-brush-stroke.png");
+      height: 150px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      &:hover {
+        text-decoration: none;
+      }
     }
-  }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */

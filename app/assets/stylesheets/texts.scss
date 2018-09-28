@@ -352,6 +352,10 @@ $melon: #FAB3A9;
     text-align: center;
   }
 
+  p .banner-text {
+    font-size: 20px;
+  }
+
   .banner-signature {
     margin-right: 20px;
     margin-top: 30px;
@@ -381,10 +385,11 @@ $melon: #FAB3A9;
     padding-left: 50px;
     padding-right: 60px;
     padding-top: 30px;
+    text-align: center;
   }
 
   .p-small {
-    font-size: 16px;
+    font-size: 25px;
   }
 
   .page-upper-left-text-item {
@@ -400,6 +405,7 @@ $melon: #FAB3A9;
     padding-top: 50px;
     p {
       color: $fluo-pink;
+      font-size: 25px;
     }
   }
 
@@ -416,13 +422,10 @@ $melon: #FAB3A9;
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    h1 {
-      width: 80%;
-    }
   }
 
   .quotidien-title {
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 
@@ -449,6 +452,9 @@ $melon: #FAB3A9;
 
   .entendus-title {
     width: 180px;
+    h4 {
+      font-size: 25px;
+    }
   }
 }
 
@@ -498,10 +504,11 @@ $melon: #FAB3A9;
     padding-left: 50px;
     padding-right: 60px;
     padding-top: 30px;
+    text-align: center;
   }
 
   .p-small {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .page-upper-left-text-item {
@@ -517,6 +524,7 @@ $melon: #FAB3A9;
     padding-top: 50px;
     p {
       color: $fluo-pink;
+      font-size: 25px;
     }
   }
 
@@ -533,13 +541,10 @@ $melon: #FAB3A9;
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    h1 {
-      width: 80%;
-    }
   }
 
   .quotidien-title {
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 
@@ -566,6 +571,9 @@ $melon: #FAB3A9;
 
   .entendus-title {
     width: 180px;
+    h4 {
+      font-size: 25px;
+    }
   }
 }
 

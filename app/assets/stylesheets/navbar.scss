@@ -123,6 +123,13 @@ $light-pink: #FFE4EF;
     left: -9999px !important;
     display: none;
   }
+
+  .navbar-mobile {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -183,62 +190,118 @@ $light-pink: #FFE4EF;
     left: -9999px !important;
     display: none;
   }
+
+  .navbar-mobile {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    display: none;
+  }
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-device-width:641px) and (max-device-width: 960px) {
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 130px;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 130px;
+    }
 
-  .navbar-middle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-  }
+    .navbar-middle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+    }
 
-  .navbar-right {
-    display: flex;
-    flex-direction: row;
-    width: 10%;
-    justify-content: center;
-    margin: 0;
-  }
+    .navbar-right {
+      display: flex;
+      flex-direction: row;
+      width: 10%;
+      justify-content: center;
+      margin: 0;
+    }
 
-  .navbar-middle-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    .navbar-middle-item {
+      margin-left: 20px;
+      margin-right: 20px;
 
-    a {
-      text-decoration: none;
-      color: black;
-      &:hover {
-        color: $fluo-pink;
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: $fluo-pink;
+        }
+      }
+      p {
+        font-size: 30px;
       }
     }
-    p {
+
+    i {
+      color: $fluo-pink;
       font-size: 30px;
     }
-  }
 
-  i {
-    color: $fluo-pink;
-    font-size: 30px;
-  }
+    .navbar-left {
+      width: 30%;
+    }
 
-  .navbar-left {
-    width: 30%;
-  }
+    .half-pink {
+      background-color: $light-pink;
+      width: 50%;
+    }
 
-  .half-pink {
-    background-color: $light-pink;
-    width: 50%;
-  }
+    .navbar {
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
+      display: none;
+    }
+
+    .navbar-mobile {
+      display: flex;
+      align-items: center;
+      height: 230px;
+      flex-direction: column;
+    }
+
+    .navbar-logo {
+      margin-top: 40px;
+      height: 80px;
+    }
+
+    .navbar-menu-mobile {
+      display: flex;
+      margin-top: 50px;
+      align-items: center;
+    }
+
+    .navbar-mobile-item {
+      margin-left: 20px;
+      margin-right: 20px;
+      p {
+        font-size: 30px !important;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+          color: $fluo-pink;
+        }
+      }
+    }
+
+    .navbar-right {
+      margin-left: 50px;
+      margin-right: 20px;
+      i {
+        font-size: 40px;
+      }
+    }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -296,11 +359,53 @@ $light-pink: #FFE4EF;
     width: 50%;
   }
 
-  .navbar-mobile {
+  .navbar {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
     display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    height: 230px;
+    flex-direction: column;
+  }
+
+  .navbar-logo {
+    margin-top: 40px;
+    height: 80px;
+  }
+
+  .navbar-menu-mobile {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  .navbar-mobile-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    p {
+      font-size: 30px !important;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        color: $fluo-pink;
+      }
+    }
+  }
+
+  .navbar-right {
+    margin-left: 50px;
+    margin-right: 20px;
+    i {
+      font-size: 40px;
+    }
   }
 }
 

@@ -90,6 +90,9 @@ $melon: #FAB3A9;
   .butt-test {
     display: flex;
     justify-content: center;
+    p {
+      font-size: 30px;
+    }
   }
 }
 
@@ -114,7 +117,7 @@ $melon: #FAB3A9;
     display: flex;
     justify-content: center;
     p {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }

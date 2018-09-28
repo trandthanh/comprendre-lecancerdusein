@@ -12,12 +12,12 @@
 <% @entendus.each do |e| %>
   <div class="index-entendu-story-right">
     <%= image_tag ("light-pink-brush-stroke.png"), class: "sticker" %>
-    <div class="index-entendu-story-half-left col-md-6">
+    <div class="index-entendu-story-half-left col-xs-6">
       <div class="entendu-title">
         <h3><%= e.title %></h3>
       </div>
     </div>
-    <div class="index-entendu-story-half col-md-6">
+    <div class="index-entendu-story-half col-xs-6">
       <%= image_tag ("#{e.id}.png"), class: "entendu-square" %>
     </div>
   </div>
