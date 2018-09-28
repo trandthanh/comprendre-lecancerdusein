@@ -33,7 +33,9 @@ $light-pink: #FFE4EF;
   .navbar-middle-item {
     margin-left: 20px;
     margin-right: 20px;
-
+    p {
+      font-size: 20px;
+    }
     a {
       text-decoration: none;
       color: black;

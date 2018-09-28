@@ -9,7 +9,9 @@ $lavender-blush: #FFEFFC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: flex-end;
   }
@@ -106,6 +108,8 @@ $lavender-blush: #FFEFFC;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sticker {
@@ -121,6 +125,13 @@ $lavender-blush: #FFEFFC;
 
   .entendu-title {
     margin-left: 50px;
+  }
+
+  .index-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
 }
@@ -131,7 +142,9 @@ $lavender-blush: #FFEFFC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: flex-end;
   }
@@ -228,6 +241,8 @@ $lavender-blush: #FFEFFC;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sticker {
@@ -245,6 +260,13 @@ $lavender-blush: #FFEFFC;
     margin-left: 50px;
   }
 
+  .index-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -253,7 +275,9 @@ $lavender-blush: #FFEFFC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: flex-end;
   }
@@ -278,6 +302,7 @@ $lavender-blush: #FFEFFC;
 
   .index-card-item {
     margin-bottom: 50px;
+    height: auto;
   }
 
   .quotidien-list-item {
@@ -350,6 +375,8 @@ $lavender-blush: #FFEFFC;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sticker {
@@ -367,6 +394,13 @@ $lavender-blush: #FFEFFC;
     margin-left: 50px;
   }
 
+  .index-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -375,7 +409,9 @@ $lavender-blush: #FFEFFC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 150vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
@@ -479,6 +515,8 @@ $lavender-blush: #FFEFFC;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sticker {
@@ -514,7 +552,9 @@ $lavender-blush: #FFEFFC;
       background-image: image-url("liste-background.png");
       background-size: cover;
       background-position: center center;
-      height: 50vh;
+      height: auto;
+      padding-top: 150px;
+      padding-bottom: 150px;
       display: flex;
       justify-content: flex-end;
       margin-top: 50px;
@@ -618,6 +658,8 @@ $lavender-blush: #FFEFFC;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
 
     .sticker {
@@ -654,7 +696,9 @@ $lavender-blush: #FFEFFC;
     background-image: image-url("liste-background.png");
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
@@ -758,6 +802,8 @@ $lavender-blush: #FFEFFC;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sticker {

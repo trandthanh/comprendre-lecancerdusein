@@ -1,5 +1,5 @@
 <div class="index-banner">
-  <div class="index-right col-md-8 text-center">
+  <div class="index-right col-xs-8 text-center">
     <div class="index-text">
       <div class="index-title">
         <h1>Toutes les questions que l'on se pose sur la maladie</h1>
@@ -22,10 +22,7 @@
               <%= link_to question_path(q.url) do %>
                 <h3><%= q.title %></h3>
               <% end %>
-              <p><%= q.description %></p>
-              <div class="page-question-card-link">
-                <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong>
-              </div>
+              <p><%= q.description %> <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong></p>
             </div>
           </div>
         </div>

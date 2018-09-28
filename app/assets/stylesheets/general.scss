@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
 /* hi-res laptops and desktops */
-@media (min-width:1281px) {
+@media (min-device-width:1281px) {
   body {
     margin: 0;
     font-family: 'Roboto', sans-serif;

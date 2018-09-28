@@ -180,7 +180,7 @@ $portrait-gray: #F1F1F1;
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-device-width:641px) and (max-device-width: 960px) {
   .photo-portrait {
-      height: 90vh;
+      height: 60vh;
     }
 
     .project-page {
@@ -240,7 +240,7 @@ $portrait-gray: #F1F1F1;
     }
 
     .project-illustrations-photos {
-      height: 35vh;
+      height: 20vh;
       margin-left: 15px;
       margin-right: 15px;
     }
@@ -320,7 +320,7 @@ $portrait-gray: #F1F1F1;
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-device-width:320px) and (max-device-width: 480px) {
   .photo-portrait {
-    height: 50vh;
+    height: 40vh;
   }
 
   .project-page {
@@ -380,7 +380,7 @@ $portrait-gray: #F1F1F1;
   }
 
   .project-illustrations-photos {
-    height: 15vh;
+    height: 10vh;
     margin-left: 15px;
     margin-right: 15px;
   }

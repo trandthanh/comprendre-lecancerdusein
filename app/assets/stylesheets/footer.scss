@@ -8,7 +8,9 @@ $fluo-pink: #E53CBC;
 /* hi-res laptops and desktops */
 @media (min-device-width:1281px) {
   .footer {
-    height: 40vh;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: $tuscany;
     p {
       font-size: 12px;
@@ -84,8 +86,10 @@ $fluo-pink: #E53CBC;
 /* big landscape tablets, laptops, and desktops */
 @media (min-device-width:1025px) and (max-device-width: 1280px) {
   .footer {
-    height: 40vh;
     background-color: $tuscany;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     p {
       font-size: 12px;
     }
@@ -160,8 +164,10 @@ $fluo-pink: #E53CBC;
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-device-width:961px) and (max-device-width: 1024px) {
   .footer {
-    height: 40vh;
     background-color: $tuscany;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     p {
       font-size: 15px;
     }
@@ -234,12 +240,92 @@ $fluo-pink: #E53CBC;
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-device-width:641px) and (max-device-width: 960px) {
+@media (min-device-width:641px) and (max-device-width: 960px) and (orientation: landscape) {
   .footer {
     display: flex;
     flex-direction: column;
-    height: 160vh;
     background-color: $tuscany;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p {
+      font-size: 25px;
+    }
+    padding: 80px;
+  }
+
+  .footer-left {
+    .small-logo {
+      height: 100px;
+    }
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    margin-top: 80px;
+  }
+
+  .footer-right-item {
+    p {
+      font-size: 30px;
+      color: white;
+      &:hover {
+        color: $fluo-pink;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $melon;
+      }
+    }
+  }
+
+  .footer-right-item-contact {
+    p {
+      font-size: 30px;
+      color: $fluo-pink;
+    }
+  }
+
+  .footer-right-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .below-footer {
+    height: 50px;
+    background-color: $melon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: $fluo-pink;
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-device-width:641px) and (max-device-width: 960px) and (orientation: portrait) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $tuscany;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     p {
       font-size: 25px;
     }
@@ -314,8 +400,10 @@ $fluo-pink: #E53CBC;
   .footer {
     display: flex;
     flex-direction: column;
-    height: 60vh;
     background-color: $tuscany;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     p {
       font-size: 25px;
     }
@@ -391,12 +479,13 @@ $fluo-pink: #E53CBC;
   .footer {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: $tuscany;
     p {
       font-size: 25px;
     }
-    padding: 130px;
   }
 
   .footer-left {
