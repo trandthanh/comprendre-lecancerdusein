@@ -119,7 +119,7 @@ $light-pink: #FFE4EF;
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-device-width:961px) and (max-device-width: 1024px){
+@media (min-device-width:961px) and (max-device-width: 1024px) and (orientation : landscape) {
   .full-banner {
     background-image: image-url("enter-background.png");
     background-size: cover;
@@ -152,7 +152,66 @@ $light-pink: #FFE4EF;
     background-image: image-url("home-illustration6.png");
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 125vh;
+  }
+
+  .dot-two {
+    background-image: image-url("dot5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .question-card-image {
+    background-size: cover;
+    background-position: center center;
+    height: 195px;
+    width: 280px;
+  }
+
+  .page-sources-logos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-device-width:961px) and (max-device-width: 1024px) and (orientation : portrait) {
+  .full-banner {
+    background-image: image-url("enter-background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    opacity: 1;
+    height: 100px;
+  }
+
+  .small-logo {
+    opacity: 1;
+    height: 70px;
+  }
+
+  .navbar-logo {
+    opacity: 1;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .half-page-illustration {
+    background-image: image-url("home-illustration6.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
 
   .dot-two {

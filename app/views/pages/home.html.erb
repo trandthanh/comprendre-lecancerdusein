@@ -46,10 +46,7 @@
                 <%= link_to question_path(q.url) do %>
                   <h3><%= q.title %></h3>
                 <% end %>
-                <p><%= q.description %></p>
-                <div class="page-question-card-link">
-                  <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong>
-                </div>
+                <p><%= q.description %> <strong><%= link_to "Lire l'article", question_path(q.url), class: "pink-link"  %></strong></p>
               </div>
             </div>
           </div>
