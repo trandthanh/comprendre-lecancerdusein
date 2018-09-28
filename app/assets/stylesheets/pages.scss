@@ -682,12 +682,12 @@ $fluo-pink: #E53CBC;
   }
 
   .page-upper-right {
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 !important;
+    width: 100%;
   }
 
   .page-upper {
