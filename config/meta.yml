@@ -1,0 +1,7 @@
+meta_product_name: "Le Cancer du Sein | Comprendre"
+meta_title: "Comprendre le Cancer du Sein - Toutes les informations à avoir en main au lendemain du diagnostic."
+meta_description: "Comprendre le cancer du sein est un site créé par une patiente actuellement en rémission de la maladie et ne prétend en aucun cas donner un avis médical ou remplacer l'avis d'un médecin. Il s'agit d'une collecte dans le but de partager les informations trouvées."
+meta_image: "comprendre-lecancerdusein-meta-image.png"                       # should exist in `app/assets/images/`
+twitter_account: "@trandgthanh"   # required for Twitter Cards
+
+
