@@ -27,6 +27,7 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
@@ -53,13 +54,14 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -101,13 +103,14 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -133,7 +136,7 @@ $melon: #FAB3A9;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -175,13 +178,14 @@ $melon: #FAB3A9;
     flex-direction: column;
     p {
       margin-top: 10px;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -207,7 +211,7 @@ $melon: #FAB3A9;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -251,13 +255,14 @@ $melon: #FAB3A9;
       p {
         margin-top: 10px;
         font-size: 25px;
+        font-weight: 500;
       }
       a {
         text-decoration: none;
         color: black;
         &:hover {
           text-decoration: none;
-          color: white;
+          color: $fluo-pink;
         }
       }
       &:hover {
@@ -284,7 +289,7 @@ $melon: #FAB3A9;
         color: black;
         &:hover {
           text-decoration: none;
-          color: white;
+          color: $fluo-pink;
         }
       }
       &:hover {
@@ -328,13 +333,14 @@ $melon: #FAB3A9;
       p {
         margin-top: 10px;
         font-size: 25px;
+        font-weight: 500;
       }
       a {
         text-decoration: none;
         color: black;
         &:hover {
           text-decoration: none;
-          color: white;
+          color: $fluo-pink;
         }
       }
       &:hover {
@@ -361,7 +367,7 @@ $melon: #FAB3A9;
         color: black;
         &:hover {
           text-decoration: none;
-          color: white;
+          color: $fluo-pink;
         }
       }
       &:hover {
@@ -405,13 +411,14 @@ $melon: #FAB3A9;
     p {
       margin-top: 10px;
       font-size: 25px;
+      font-weight: 500;
     }
     a {
       text-decoration: none;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
@@ -438,7 +445,7 @@ $melon: #FAB3A9;
       color: black;
       &:hover {
         text-decoration: none;
-        color: white;
+        color: $fluo-pink;
       }
     }
     &:hover {
