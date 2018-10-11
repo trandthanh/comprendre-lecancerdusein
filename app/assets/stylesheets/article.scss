@@ -1,0 +1,13 @@
+.article-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Entendus
+.lorsque-l-on-nous-dit-qu-il-faut-se-battre {
+  background-image: image-url("lorsque-l-on-nous-dit-qu-il-faut-se-battre.png");
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+}

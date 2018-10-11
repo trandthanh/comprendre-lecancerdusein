@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get 'quotidiens/:url', to: 'quotidiens#show', as: :quotidien
   resources :quotidiens, only: [:index, :show]
 
+  get 'entendus/:url', to: 'entendus#show', as: :entendu
   resources :entendus, only: [:index, :show]
 end

@@ -16,11 +16,13 @@
     <%= image_tag ("light-pink-brush-stroke.png"), class: "sticker" %>
     <div class="index-entendu-story-half-left">
       <div class="entendu-title">
-        <h3><%= e.title %></h3>
+        <%= link_to entendu_path(e.url) do %>
+          <h3><%= e.title %></h3>
+        <% end %>
       </div>
-      <div class="entendu-description">
+<!--       <div class="entendu-description">
         <p><%= simple_format(e.story) %></p>
-      </div>
+      </div> -->
     </div>
   </div>
 <% end %>

@@ -1,0 +1,13 @@
+<%# content_for :meta_title, "#{@question.title} | Comprendre le Cancer du Sein" %>
+<%# content_for :meta_description, @question.description %>
+
+<%= render "entendus/#{@entendu_url}" %>
+
+<div class="supplement-info">
+  <h2>Vous ne trouvez pas l'information que vous recherchez ?</h2>
+  <div class="butt-test butt-supp">
+    <%= link_to(root_path, class: "butt-pink") do %>
+        <p>Laissez-moi un message</p>
+    <% end %>
+  </div>
+</div>
