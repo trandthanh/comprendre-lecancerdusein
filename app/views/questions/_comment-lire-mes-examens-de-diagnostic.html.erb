@@ -129,8 +129,25 @@
     </div>
   </div> -->
 
-  <% @question.liens.each do |l| %>
-    <%= l.title %>
-  <% end %>
+  <div class="product">
+    <div class='product-upvote'>
+<!--       <div class="product-arrow"></div> -->
+      <div class='product-count'>Classement ACR</div>
+    </div>
+    <div class='product-body'>
+      <% @question.liens.each do |l| %>
+        <%= link_to l.link do %>
+          <h3><%= l.title %></h3>
+          <h4><%= l.publication %></h4>
+          <p><%= l.description %></p>
+        <% end %>
+      <% end %>
+    </div>
+    <ul class="list-inline product-controls hidden-sm hidden-xs">
+      <li><a href=""><i class="fa fa-share"></i></a></li>
+    </ul>
+  </div>
+
+
 
 </div>
