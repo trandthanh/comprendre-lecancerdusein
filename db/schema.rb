@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_25_152311) do
+ActiveRecord::Schema.define(version: 2018_10_15_072136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,21 @@ ActiveRecord::Schema.define(version: 2018_09_25_152311) do
     t.text "story"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "liens", force: :cascade do |t|
+    t.string "title"
+    t.string "link"
+    t.string "publication"
+    t.text "description"
+    t.bigint "question_id"
+    t.bigint "quotidien_id"
+    t.bigint "entendu_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["entendu_id"], name: "index_liens_on_entendu_id"
+    t.index ["question_id"], name: "index_liens_on_question_id"
+    t.index ["quotidien_id"], name: "index_liens_on_quotidien_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -39,4 +54,7 @@ ActiveRecord::Schema.define(version: 2018_09_25_152311) do
     t.text "description"
   end
 
+  add_foreign_key "liens", "entendus"
+  add_foreign_key "liens", "questions"
+  add_foreign_key "liens", "quotidiens"
 end

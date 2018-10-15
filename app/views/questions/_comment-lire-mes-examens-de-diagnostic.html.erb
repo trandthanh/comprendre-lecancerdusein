@@ -5,7 +5,7 @@
     <p><%= @question.description %></p>
   </div>
   <%= image_tag ("#{@question.url}.png"), class: "question-article-banner" %>
-  <div class="question-article-text">
+  <!-- <div class="question-article-text">
     <div class="question-section">
       <div class="question-subtitle-title col-xs-4">
         <h3>A garder en tête :</h3>
@@ -127,5 +127,10 @@
         <p>L’IRM mammaire, non-obligatoire, permet d’avoir une image extrêmement claire de la tumeur et de voir si des ganglions ont déjà été touchés. Les ganglions sont en général le premier portail de propagation du cancer et le nombre de ganglions touchés déterminent également le stade du cancer.</p>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <% @question.liens.each do |l| %>
+    <%= l.title %>
+  <% end %>
+
 </div>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  link: MyString
+  publication: MyString
+  description: MyText
+  question: one
+  quotidien: one
+  entendu: one
+
+two:
+  title: MyString
+  link: MyString
+  publication: MyString
+  description: MyText
+  question: two
+  quotidien: two
+  entendu: two
