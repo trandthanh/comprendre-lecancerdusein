@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_15_072136) do
+ActiveRecord::Schema.define(version: 2018_10_15_122232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2018_10_15_072136) do
     t.bigint "entendu_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "category"
     t.index ["entendu_id"], name: "index_liens_on_entendu_id"
     t.index ["question_id"], name: "index_liens_on_question_id"
     t.index ["quotidien_id"], name: "index_liens_on_quotidien_id"
