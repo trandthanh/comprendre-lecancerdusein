@@ -130,22 +130,22 @@
   </div> -->
 
   <div class="product">
-    <div class='product-upvote'>
-<!--       <div class="product-arrow"></div> -->
-      <div class='product-count'>To do</div>
-    </div>
-    <div class='product-body'>
-      <% @question.liens.each do |l| %>
-        <%= link_to l.link do %>
-          <h3><%= l.title %></h3>
-          <h4><%= l.publication %></h4>
-          <p><%= l.description %></p>
-        <% end %>
-      <% end %>
-    </div>
-    <ul class="list-inline product-controls hidden-sm hidden-xs">
-      <li><a href=""><i class="fa fa-share"></i></a></li>
-    </ul>
+    <% @question.liens.each do |l| %>
+      <div class='product-upvote'>
+  <!--       <div class="product-arrow"></div> -->
+        <div class='product-count'><%= l.category %></div>
+      </div>
+      <div class='product-body'>
+          <%= link_to l.link do %>
+            <h3><%= l.title %></h3>
+            <h4><%= l.publication %></h4>
+            <p><%= l.description %></p>
+          <% end %>
+      </div>
+      <ul class="list-inline product-controls hidden-sm hidden-xs">
+        <li><a href=""><i class="fa fa-share"></i></a></li>
+      </ul>
+    <% end %>
   </div>
 
 
