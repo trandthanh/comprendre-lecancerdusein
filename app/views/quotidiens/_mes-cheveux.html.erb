@@ -2,7 +2,7 @@
   <div class="quotidien-article-upper">
 
       <div class="quotidien-article-left text-center col-xs-6">
-        <%= image_tag ("hair1.png"), class: "quotidien-article-image" %>
+        <%= image_tag "#{@quotidien.url}.png", class: "quotidien-article-image" %>
       </div>
       <div class="quotidien-article-right col-xs-6">
         <div class="quotidien-article-title">
@@ -15,7 +15,26 @@
 
   </div>
 
-  <div class="quotidien-section">
+  <div class="product">
+    <% @quotidien.liens.each do |l| %>
+      <div class='product-upvote'>
+  <!--       <div class="product-arrow"></div> -->
+        <div class='product-count'><%= l.category %></div>
+      </div>
+      <div class='product-body'>
+          <%= link_to l.link do %>
+            <h3><%= l.title %></h3>
+            <h4><%= l.publication %></h4>
+            <p><%= l.description %></p>
+          <% end %>
+      </div>
+      <ul class="list-inline product-controls hidden-sm hidden-xs">
+        <li><a href=""><i class="fa fa-share"></i></a></li>
+      </ul>
+    <% end %>
+  </div>
+
+<!--   <div class="quotidien-section">
     <div class="row">
       <div class="question-subtitle-title col-xs-4">
         <h3>Pourquoi les cheveux tombent-ils ?</h3>
@@ -80,7 +99,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="quotidien-section-links text-center">
     <h3 class="show-links">Quelques sites qui pourront nous être utiles:</h3>

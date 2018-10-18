@@ -11,18 +11,31 @@
   </div>
 </div>
 
-<% @entendus.each do |e| %>
-  <div class="index-entendu-story-right">
-    <%= image_tag ("light-pink-brush-stroke.png"), class: "sticker" %>
-    <div class="index-entendu-story-half-left">
-      <div class="entendu-title">
-        <%= link_to entendu_path(e.url) do %>
-          <h3><%= e.title %></h3>
-        <% end %>
+<div class="index-list">
+  <div class="row">
+    <% @entendus.each do |e| %>
+      <div class="col-md-4 col-s-12 text-center">
+        <div class="index-card-item">
+          <div class="page-questions-card-body text-center">
+            <%= image_tag "pinkpaint.png", class: "question-card-image" %>
+            <div class="page-questions-card-description">
+              <%= link_to entendu_path(e.url) do %>
+                <h3><%= e.title %></h3>
+              <% end %>
+              <p><strong><%= link_to "Lire l'article", entendu_path(e.url), class: "pink-link"  %></strong></p>
+            </div>
+          </div>
+        </div>
       </div>
-<!--       <div class="entendu-description">
-        <p><%= simple_format(e.story) %></p>
-      </div> -->
-    </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+<div class="supplement-info">
+  <h2>Vous ne trouvez pas l'information que vous recherchez ?</h2>
+  <div class="butt-test butt-supp">
+    <%= link_to(root_path, class: "butt-pink") do %>
+        <p>Laissez-moi un message</p>
+    <% end %>
+  </div>
+</div>

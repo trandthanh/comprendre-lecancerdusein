@@ -11,19 +11,26 @@
   </div>
 </div>
 
-<div class="quotidien-index-list">
-  <% @quotidiens.each do |q| %>
-    <div class="quotidien-list-item">
-      <%= link_to quotidien_path(q.url) do %>
-        <h3><%= q.title %></h3>
-      <% end %>
-      <p class="no-line"><%= q.description %></p>
-      <%= link_to quotidien_path(q.url) do %>
-        <strong><p class="quotidien-link">Voir la liste</p></strong>
-      <% end %>
-    </div>
-  <% end %>
+<div class="index-list">
+  <div class="row">
+    <% @quotidiens.each do |q| %>
+      <div class="col-md-4 col-s-12 text-center">
+        <div class="index-card-item">
+          <div class="page-questions-card-body text-center">
+            <%= image_tag "#{q.url}.png", class: "question-card-image" %>
+            <div class="page-questions-card-description">
+              <%= link_to quotidien_path(q.url) do %>
+                <h3><%= q.title %></h3>
+              <% end %>
+              <p><strong><%= link_to "Lire l'article", quotidien_path(q.url), class: "pink-link"  %></strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+
 
 <div class="supplement-info">
   <h2>Vous ne trouvez pas l'information que vous recherchez ?</h2>

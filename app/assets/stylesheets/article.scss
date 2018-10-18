@@ -4,9 +4,21 @@
   justify-content: center;
 }
 
+.article-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p {
+    width: 60%;
+  }
+}
+
 // Entendus
-.lorsque-l-on-nous-dit-qu-il-faut-se-battre {
-  background-image: image-url("lorsque-l-on-nous-dit-qu-il-faut-se-battre.png");
+.lorsqu-on-nous-dit-qu-il-faut-se-battre {
+  background-image: image-url("lorsqu-on-nous-dit-qu-il-faut-se-battre.png");
   background-size: cover;
   background-position: center center;
   height: 80vh;

@@ -1,0 +1,29 @@
+<div class="article-title <%= "#{@entendu.url}" %>">
+  <h1><%= @entendu.title.upcase %></h1>
+</div>
+
+<div class="question-article">
+  <div class="article-description text-center">
+    <p>Lorem ipsum dolor amet dreamcatcher franzen marfa, ethical actually mixtape wolf offal plaid cray snackwave. Occupy lyft kogi, brunch asymmetrical ethical jean shorts helvetica. Semiotics twee lumbersexual cronut pitchfork drinking vinegar put a bird on it health goth vaporware iPhone fixie lyft. Lomo readymade XOXO photo booth live-edge lyft artisan +1 unicorn wayfarers listicle. Four dollar toast slow-carb hammock single-origin coffee bicycle rights cronut truffaut. Plaid umami venmo mixtape. Franzen gastropub tumeric, pinterest drinking vinegar chicharrones raw denim art party pork belly unicorn.</p>
+  </div>
+
+  <div class="product">
+      <% @entendu.liens.each do |l| %>
+        <div class='product-upvote'>
+    <!--       <div class="product-arrow"></div> -->
+          <div class='product-count'><%= l.category %></div>
+        </div>
+        <div class='product-body'>
+            <%= link_to l.link do %>
+              <h3><%= l.title %></h3>
+              <h4><%= l.publication %></h4>
+              <p><%= l.description %></p>
+            <% end %>
+        </div>
+        <ul class="list-inline product-controls hidden-sm hidden-xs">
+          <li><a href=""><i class="fa fa-share"></i></a></li>
+        </ul>
+      <% end %>
+    </div>
+</div>
+
