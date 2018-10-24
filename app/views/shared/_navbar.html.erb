@@ -27,7 +27,9 @@
     </div>
   </div>
   <div class="navbar-right">
-    <i class="fas fa-envelope"></i>
+    <%= mail_to "trandgthanh@gmail.com" do %>
+      <i class="fas fa-envelope"></i>
+    <% end %>
   </div>
 </div>
 
@@ -59,7 +61,9 @@
       <% end %>
     </div>
     <div class="navbar-right">
-      <i class="fas fa-envelope"></i>
+      <%= mail_to "trandgthanh@gmail.com" do %>
+        <i class="fas fa-envelope"></i>
+      <% end %>
     </div>
   </div>
 </div>

@@ -57,6 +57,15 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 15px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -135,6 +144,14 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 15px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -213,6 +230,15 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 15px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    a {
+      p:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -290,6 +316,14 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 30px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -368,6 +402,14 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 30px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -446,6 +488,14 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 30px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -524,6 +574,14 @@ $fluo-pink: #E53CBC;
     p {
       font-size: 30px;
       color: $fluo-pink;
+      &:hover {
+        color: white;
+      }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
