@@ -16,4 +16,7 @@ Rails.application.routes.draw do
 
   get 'entendus/:url', to: 'entendus#show', as: :entendu
   resources :entendus, only: [:index, :show]
+
+  get 'contact-me', to: 'messages#new', as: 'new_message'
+  post 'contact-me', to: 'messages#create', as: 'create_message'
 end
