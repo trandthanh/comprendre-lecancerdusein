@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
       MessageMailer.contact_me(@message).deliver_now
       redirect_to new_message_url, notice: "Message reçu, merci !"
     else
-      render :new
+      render :new, notice: "Il y a eu une erreur dans l'envoi de votre message, réessayez !"
     end
   end
 
@@ -22,6 +22,4 @@ class MessagesController < ApplicationController
   end
 
 end
-
-
 
