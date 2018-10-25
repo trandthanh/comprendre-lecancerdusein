@@ -94,24 +94,15 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'comprendre-lecancerdusein.herokuapp.com' }
-
+  config.action_mailer.default_url_options = { host: 'http://comprendre-lecancerdusein.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
-  # SMTP settings for gmail
-  config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
-   :port                 => 587,
-   :domain              => 'comprendre-lecancerdusein.herokuapp.com',
-   :user_name            => ENV['gmail_username'],
-   :password             => ENV['gmail_password'],
-   :authentication       => "plain",
-  :enable_starttls_auto => true
+  ActionMailer::Base.smtp_settings = {
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'yourdomain.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
-
-  config.action_mailer.delivery_method = :mailgun
-    config.action_mailer.mailgun_settings = {
-     api_key: 'ENV["mailgun_secret_api_key"]',
-     domain: 'comprendre-lecancerdusein.herokuapp.com',
-    }
-
 end
