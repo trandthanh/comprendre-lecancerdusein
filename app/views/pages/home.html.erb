@@ -23,7 +23,7 @@
 </div>
 
 <div class="page-questions dot-two text-center">
-  <div class="page-questions-title text-center">
+  <div class="page-questions-title">
     <div class="page-questions-title-item-1">
       <p><strong>Les Questions sur la Maladie</strong></p>
     </div>
@@ -50,8 +50,8 @@
       <% end %>
     </div>
   </div>
-  <div class="page-questions-link">
-    <%= link_to questions_path do %>
+  <div class="butt-question">
+    <%= link_to(questions_path, class: "butt-pink") do %>
       <p>Voir les autres articles</p>
     <% end %>
   </div>
