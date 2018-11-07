@@ -57,7 +57,7 @@
   </div>
 </div>
 
-<div class="page-questions dot-two text-center">
+<div class="page-questions dot-two snow text-center">
   <div class="page-questions-title">
     <div class="page-questions-title-item-1">
       <p><strong>La Vie au Quotidien</strong></p>
@@ -86,58 +86,33 @@
     </div>
   </div>
   <div class="butt-question">
-    <%= link_to(questions_path, class: "butt-pink") do %>
+    <%= link_to(quotidiens_path, class: "butt-pink") do %>
       <p>Voir les autres articles</p>
     <% end %>
   </div>
 </div>
 
-
-<div class="page-entendu">
-  <div class="page-entendu-left">
-    <div class="page-questions-title text-center">
-      <div class="page-entendus-title-item-1 text-center">
-        <h1>Comment communiquer avec nos proches ?</h1>
-      </div>
-      <div class="page-entendus-link">
-        <%= link_to entendus_path do %>
-          <p>Voir d'autres histoires</p>
-        <% end %>
-      </div>
+<div class="page-questions dot-two text-center">
+  <div class="page-questions-title">
+    <div class="page-questions-title-item-1">
+      <p><strong>L'Esprit Guérit le Corps ?</strong></p>
+    </div>
+    <div class="page-questions-title-item-2">
+      <h1>Comment communiquer avec nos proches ?</h1>
     </div>
   </div>
-<!--   <div class="page-entendu-right">
-    <div class="page-entendu-items">
-      <%# @entendus.sample(3).each do |e| %>
-        <%#= link_to entendus_path do  %>
-<!           <div class="page-entendus-card round text-center" style="background-image: url(assets/circle<%#= rand(2) %>.jpg)"> -->
-<!--           <div class="page-entendus-card round text-center">
-  <!         <div class="page-entendus-card round text-center"> -->
-            <!-- <div class="entendus-title"> -->
-              <!-- <h4 class="cursive"><%#= e.title %></h4> -->
-<!--             </div>
-          </div> -->
-        <%# end %>
-      <%# end %>
-<!--     </div> -->
-<!--   </div>  -->
-
-
-
-
   <div class="page-questions-cards text-center">
     <div class="page-questions-row text-center">
-      <% @entendus.sample(3).each do |e| %>
+      <% @entendus.sample(3).each do |q| %>
         <div class="page-questions-card-item">
           <div class="col-md-4 text-center">
             <div class="page-questions-card-body text-center">
-              <%#= image_tag "#{e.url}.png", class: "question-card-image" %>
               <%= image_tag "pinkpaint.png", class: "question-card-image" %>
-              <div class="page-questions-card-description" style="box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03); background-color: white;">
-                <%= link_to question_path(e.url) do %>
-                  <h3 style="padding: 10px;"><%= e.title %></h3>
+              <div class="page-questions-card-description">
+                <%= link_to entendu_path(q.url) do %>
+                  <h3><%= q.title %></h3>
                 <% end %>
-                <p><strong><%= link_to "Lire l'article", entendu_path(e.url), class: "pink-link"  %></strong></p>
+                <p><%#= q.description %> <strong><%= link_to "Lire l'article", entendu_path(q.url), class: "pink-link"  %></strong></p>
               </div>
             </div>
           </div>
@@ -145,8 +120,14 @@
       <% end %>
     </div>
   </div>
-
+  <div class="butt-question">
+    <%= link_to(entendus_path, class: "butt-pink") do %>
+      <p>Voir les autres articles</p>
+    <% end %>
+  </div>
 </div>
+
+
 
 <div class="supplement-info">
   <h2>Vous ne trouvez pas l'information que vous recherchez ?</h2>
