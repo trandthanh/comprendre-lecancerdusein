@@ -36,16 +36,16 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <% unless current_page?(root_path) %>
+    <%# unless current_page?(root_path) %>
       <%= render 'shared/navbar' %>
-    <% end %>
+    <%# end %>
 
     <div class="page">
       <%= yield %>
     </div>
 
-    <% unless current_page?(root_path) %>
+    <%# unless current_page?(root_path) %>
       <%= render 'shared/footer' %>
-    <% end %>
+    <%# end %>
   </body>
 </html>

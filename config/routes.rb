@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
-  root "pages#enter"
+  root "pages#home"
 
-  get 'home', to: 'pages#home', as: :home
+  # get 'home', to: 'pages#home', as: :home
   get 'project', to: 'pages#project', as: :project
 
 

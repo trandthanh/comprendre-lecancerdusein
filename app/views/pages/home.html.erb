@@ -1,15 +1,15 @@
 <div class="part-one">
   <div class="home-illustration">
     <div class="page-upper-left dot-one">
-      <div class="page-upper-left-text">
+      <div class="page-upper-left-text text-center">
         <div class="page-upper-left-text-item">
           <h1 class= "h-big">Et si, on pouvait enfin rechercher notre cancer sur Internet ?</h1>
         </div>
         <div class="page-upper-left-text-item">
           <p class="p-small">
-          On ne m’avait dit de ne pas chercher sur Internet car oui, je me suis vite retrouvée confrontée à des témoignages déprimants et débordée par la pléthore d’informations. Cependant, je reste persuadée qu’Internet est un trésor, débordant de pépites et qu’on peut, avec un peu de recul, de recherches et de curiosité, y trouver les meilleures sources pour comprendre sa maladie, pour trouver de l’aide dans la gestion de son quotidien et pour se rendre compte qu’en fait, que nous ne sommes pas seuls.
+          On m’avait dit de ne pas chercher sur Internet et à juste titre. Je me suis vite retrouvée confrontée à des témoignages déprimants ou débordée par la pléthore d’informations. Cependant, je reste persuadée qu’Internet est un trésor, plein de pépites et qu’on peut, avec un peu de recul, de recherches et de curiosité, y trouver les meilleures sources pour comprendre sa maladie, pour trouver de l’aide dans la gestion de son quotidien et pour se rendre compte qu’en fait, que nous ne sommes pas seuls.
           <br><br>
-          Comprendre sa maladie, ses mécanismes, est le premier pas vers la guérison. La connaître permet de mieux la dompter. Au cours de mon traitement, j’ai pu rassembler une liste de liens, d’articles sur Internet, qui m’ont aidé à comprendre cette maladie qui m’avait envahie et, pour éviter que cette liste repose inutilement dans mon ordinateur, pourquoi pas la partager avec vous et espérer qu’elle puisse, peut-être également, vous aider.
+          Comprendre sa maladie, ses mécanismes, est le premier pas vers la guérison. La connaître permet de mieux la dompter. Au cours de mon traitement, j’ai pu rassembler une liste de liens, d’articles sur Internet, qui m’ont aidé à comprendre cette maladie qui m’avait envahie et, pour éviter que cette liste repose inutilement dans mon ordinateur, pourquoi pas la partager avec vous et espérer qu’elle puisse, peut-être, également vous aider.
           </p>
         </div>
       </div>
@@ -57,34 +57,41 @@
   </div>
 </div>
 
-<div class="page-quotidien">
-  <div class="page-quotidien-right text-center">
-    <div class="page-questions-title text-center">
-      <div class="page-questions-title-item-1">
-        <p><strong>Les Listes pour Aider Au Quotidien</strong></p>
-      </div>
-      <div class="page-quotidiens-title-item-2">
-        <h1>Nourriture, sports ... Comment ma vie au quotidien est-elle affectée ?</h1>
-      </div>
+<div class="page-questions dot-two text-center">
+  <div class="page-questions-title">
+    <div class="page-questions-title-item-1">
+      <p><strong>La Vie au Quotidien</strong></p>
     </div>
-    <div class="page-quotidiens-cards">
-      <% @quotidiens.each do |q| %>
-        <div class="page-quotidiens-cards-item">
-          <div class="page-quotidiens-cards-text">
-            <%= link_to quotidien_path(q.url) do %>
-              <p class="quotidien-title"><%= q.title %></p>
-            <% end %>
+    <div class="page-questions-title-item-2">
+      <h1>Alimentation, activités physiques, cheveux ... <br> Comment ma vie au quotidien est-elle affectée ?</h1>
+    </div>
+  </div>
+  <div class="page-questions-cards text-center">
+    <div class="page-questions-row text-center">
+      <% @quotidiens.sample(3).each do |q| %>
+        <div class="page-questions-card-item">
+          <div class="col-md-4 text-center">
+            <div class="page-questions-card-body text-center">
+              <%= image_tag "#{q.url}.png", class: "question-card-image" %>
+              <div class="page-questions-card-description">
+                <%= link_to quotidien_path(q.url) do %>
+                  <h3><%= q.title %></h3>
+                <% end %>
+                <p><%= q.description %> <strong><%= link_to "Lire l'article", quotidien_path(q.url), class: "pink-link"  %></strong></p>
+              </div>
+            </div>
           </div>
         </div>
       <% end %>
     </div>
-    <div class="page-entendus-link">
-      <%= link_to quotidiens_path do %>
-        <p>Voir d'autres listes</p>
-      <% end %>
-    </div>
+  </div>
+  <div class="butt-question">
+    <%= link_to(questions_path, class: "butt-pink") do %>
+      <p>Voir les autres articles</p>
+    <% end %>
   </div>
 </div>
+
 
 <div class="page-entendu">
   <div class="page-entendu-left">
